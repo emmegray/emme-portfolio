@@ -1,14 +1,11 @@
 ---
-import ThemeIcon from './ThemeIcon.astro';
+import { data } from "../content/data"
 ---
-<div class="navbar">
-    <div class="navbar__title">
-        <a href="/">Emme portfolio</a>
-    </div>
-    <div class="navbar__menu">
-        <a href="/experience/">Experience</a>
-        <a href="/works/">Works</a>
-        <a href="/posts/">Posts</a>
-    </div>
-</div>
+<header class="d-flex flex-wrap justify-content-center py-3 mb-4">
+
+    {data.Header.pages.map((page) => (
+          <a href={page.link}>{page.name}</a>
+      ))}
+
+</header>
 

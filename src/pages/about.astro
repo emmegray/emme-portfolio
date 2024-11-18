@@ -1,0 +1,56 @@
+---
+import { getCollection } from "astro:content";
+import Layout from '../layouts/Layout.astro';
+const allProjects = await getCollection("projects");
+const pageTitle = "Works";
+import { data } from "../content/data"
+---
+<Layout pageTitle={pageTitle}>
+    <div>
+      <div class="polaroid">
+        <a href="#" title="Hey that's me!">
+          <img
+            id="emme-photo-about"
+            src="/material/photo2.jpg"
+            class="d-block mx-lg-auto img-fluid"
+            alt="Manuela"
+            width="400"
+            loading="lazy"
+            title="Manuela"
+          />
+        </a>
+      </div>
+      <h2 style="font-weight: bold;">About me</h2>
+      <p>{data.About.Intro}</p>
+    </div>
+    <h2 style="font-weight: bold;">Experiences</h2>
+    <div>
+      {data.About.Experiences.map((experience) => (
+        <div
+          id="about-card"
+          key={experience.company}
+        >
+          <h2>{experience.title}</h2>
+          <h3>{experience.subtitle}</h3>
+          <p>{experience.description}</p>
+
+          {experience.skills && (
+            <ul>
+              {experience.skills.map((skill) => (
+                <li key={skill}>{skill}</li>
+              ))}
+            </ul>
+          )}
+        </div>
+      ))}
+      <div id="emme-hype" class="white-line" style="padding-bottom: 0;">
+        <img
+          src="/material/Emme hype.gif"
+          alt="Emme hype"
+          width="340"
+          loading="lazy"
+        />
+      </div>
+    </div>
+</Layout>
+
