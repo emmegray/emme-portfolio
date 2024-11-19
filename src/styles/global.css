@@ -5,7 +5,7 @@
     --button: #78c2ad;
     --text: #fdebf3;
     --text-light: #1e1e2e; 
-    --text-link: #78c2ad;
+    --text-link: #fc9f9f;
     --underline: #375a7f;
     --header: 'Josefin Sans', sans-serif; 
     --body: 'Josefin Sans', sans-serif; 
@@ -234,7 +234,7 @@ header a:hover::before {
 
 /* Badge */
 .badge {
-    background-color: #584966;
+    background-color: #b52727;
     color: var(--text);
     border-radius: 6px;
     font-family: var(--body);
@@ -255,7 +255,7 @@ header a:hover::before {
 
 .badge--item {
     border-radius: 4px;
-    font-size: 0.7rem;
+    font-size: 12px;
     margin-right: 5px;
     padding: 0.5em 0.3em 0.3em 0.3em;
 }

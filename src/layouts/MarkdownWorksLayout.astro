@@ -3,9 +3,6 @@ import BaseLayout from './Layout.astro';
 const { frontmatter } = Astro.props;
 ---
 <BaseLayout pageTitle={frontmatter.title}>
-    <div class="gif">
-        <img width="300" height="259" alt="RaccoonLaptopGif" src="/laptop.webp"/>
-    </div>
     <h2>{frontmatter.title}</h2>
     <slot />
     <ul class="badge__list">
@@ -15,8 +12,7 @@ const { frontmatter } = Astro.props;
         <li><span class="badge badge--item">GITHUB</span><a class="badge__link" href={frontmatter.github} target="_blank">{frontmatter.github}</a></li>
     </ul>
     <div class="center">
-        <img class="pro-img" width="500px" height="281" src={frontmatter.worksImage1.url} alt={frontmatter.worksImage1.alt} />
-        <img class="pro-img" width="500px" height="281" src={frontmatter.worksImage2.url} alt={frontmatter.worksImage2.alt} />
+        <img class="pro-img" width="100%" height="100%" src={frontmatter.worksImage1.url} alt={frontmatter.worksImage1.alt} />
     </div>
 </BaseLayout>
 
