@@ -224,7 +224,7 @@ header a:hover::before {
 
 #about-card ul {
   margin: 0;
-  padding: 20px;
+  padding: 20px 20px 0;
 }
 
 #about-card li {
