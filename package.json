@@ -20,10 +20,15 @@
     "@types/react-dom": "^18.3.1",
     "astro": "^4.16.12",
     "astro-bootstrap": "^0.7.0",
+    "astro-carousel": "^2.1.0",
     "bootstrap": "^5.3.3",
     "motion": "^11.11.17",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-reveal": "^1.2.2"
+    "react-reveal": "^1.2.2",
+    "webcoreui": "^0.8.1"
+  },
+  "devDependencies": {
+    "sass-embedded": "^1.81.0"
   }
 }
