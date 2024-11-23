@@ -16,18 +16,23 @@ import { data } from "../content/data"
       <h1 class="display-5 fw-bold lh-1 mb-3 text-white">
         Ciao! <i class="fa-solid fa-music fa-bounce"></i>
         <br>
-        I am <b>Manuela</b>
+        I'm <b>Manuela</b>,
       </h1>
       <h2>
-        Frontend Developer, Digital Artist and Twitch Streamer from Italy
+        a Front-end Developer, Digital 2D Artist and Twitch Streamer from Italy
       </h2>
     <p class="white-line">
       I'm a creative chill person with the passion of learning new things while destroying them to understand how they work.<br>
       If you are curious to know more about me feel free to browse this portfolio to see my work and more!
     </p>
     <div class="skills" style="text-align: left;">
+      <p style="margin: 0;">
+        Wanna work together?
+        <br>
+        Contact me here!</p>
+
       {data.Contact.Socials.map((social) => (
-                <a href={social.link}><i class={social.icon} style="color: white; font-size: xx-large; padding:10px"></i></a>
+                <a href={social.link}><i class={social.icon} style="color: white; font-size: large; padding:10px"></i></a>
       ))}
     </div>
 </Layout>

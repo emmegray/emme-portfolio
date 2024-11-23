@@ -4,8 +4,8 @@ import MarkdownWorksLayout from "../../layouts/MarkdownWorksLayout.astro";
 
 export const prerender = true;
 export async function getStaticPaths() {
-    const projectEntries = await getCollection("projects");
-    return projectEntries.map((entry) => ({
+    const workEntries = await getCollection("works");
+    return workEntries.map((entry) => ({
         params: { slug: entry.slug },
         props: { entry },
     }));

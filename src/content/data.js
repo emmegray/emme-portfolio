@@ -151,63 +151,57 @@ export const data = {
     Arts: [
       {
         alt: "Moonlight, fan art of John Martson from Red Dead Redemption for lights practice",
-        src: "works/arts/Moonlight.png",
+        src: "public/arts/Moonlight.png",
+      },
+    ],
+    Emote: [
+      {
+        alt: "Twitch emote commission Lucho set 1",
+        src: "public/emote/Twitch commission - Lucho emote showcase 1.png"
       },
       {
-        alt: "Work for the MajiMonth 2020",
-        src: "works/arts/MajiMonth2020 - Hannya.png",
+        alt: "Twitch emote commission Lucho set 2",
+        src: "public/emote/Twitch commission - Lucho emote showcase 2.png"
       },
       {
-        alt: "Red Dead Redemption II fan art",
-        src: "works/arts/RDR II fan art - Twitch Request.png",
+        alt: "Twitch emote commission Lucho set 3",
+        src: "public/emote/Twitch commission - Lucho emote showcase 3.gif"
       },
       {
-        alt: "Commission Braindamage97",
-        src: "works/arts/Commission Braindamage97 - FF7.png",
+        alt: "Twitch emote commission Lucho set 4",
+        src: "public/emote/Twitch commission - Lucho emote showcase 4.png"
       },
       {
-        alt: "Commission - Xhenarjo",
-        src: "works/arts/Commission - Xhenarjo 2.png",
+        alt: "Twitch emote commission MetalZarko set 2",
+        src: "public/emote/Twitch commission - MetalZarko emote showcase 2.png"
       },
       {
-        alt: "Cyberpunk",
-        src: "works/arts/ArtFight 2021 Cyberpunk OC 01.png",
+        alt: "Twitch emote commission MetalZarko set 1",
+        src: "public/emote/Twitch commission - MetalZarko emote showcase.png"
       },
       {
-        alt: "Ash - Evil Dead doodle",
-        src: "works/arts/Ash - Evil Dead doodle.png",
+        alt: "Twitch emote commission Prongedleaf",
+        src: "public/emote/Twitch commission - Prongedleaf emote showcase.png"
       },
       {
-        alt: "Best way to clean John",
-        src: "works/arts/Best way to clean John.png",
+        alt: "Twitch emote commission Saetta set 1",
+        src: "public/emote/Twitch commission - Saetta badges showcase 1.gif"
       },
       {
-        alt: "Happy 11 Anniversary RDR",
-        src: "works/arts/Happy 11 Aniversary RDR.png",
+        alt: "Twitch badge commission Saetta",
+        src: "public/emote/Twitch commission - Saetta badges showcase.png"
       },
       {
-        alt: "Inscryption - Lonely Wizard",
-        src: "works/arts/Inscryption - Lonely Wizard.png",
+        alt: "Twitch badge commission Stormy",
+        src: "public/emote/Twitch commission - showcase Stormy.png"
       },
       {
-        alt: "Kofi Member reward",
-        src: "works/arts/Kofi Member reward - FEB.png",
+        alt: "Twitch emote commission Elly",
+        src: "public/emote/Twitch commission showcase 2.png"
       },
       {
-        alt: "Steampunk",
-        src: "works/arts/Talyn Ieiri Leo stampunk - Twitch Request.png",
-      },
-      {
-        alt: "Thomas",
-        src: "works/arts/Thomas.png",
-      },
-      {
-        alt: "Xhenarjo drawing",
-        src: "works/arts/Xhenarjo drawing 01 credit.png",
-      },
-      {
-        alt: "Zhao",
-        src: "works/arts/Zhao.png",
+        alt: "Twitch emote commission Elly",
+        src: "public/emote/Twitch commission showcase.gif"
       },
     ]
   },

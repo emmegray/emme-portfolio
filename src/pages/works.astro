@@ -2,13 +2,14 @@
 import { getCollection } from "astro:content";
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
-import Carousel from '../components/Carousel.astro';
+import {Gallery} from '../components/Gallery';
 const allProjects = await getCollection("projects");
 const pageTitle = "Works";
 import { data } from "../content/data"
 ---
 <Layout pageTitle={pageTitle}>
     <h2 class="white-line">Works</h2>
+    <br>
     <h2>Code projects:</h2>
     <ul role="list" class="link-card-grid">
         {allProjects.map((card) => <Card 
@@ -17,9 +18,9 @@ import { data } from "../content/data"
             title={card.data.title} 
         />)}
     </ul>
-    <h2>Art projects:</h2>
-    <h3>Emote commissions:</h3>
-    <Carousel />
+    <h2>Art projects</h2>
+    <Gallery images={data.Works.Arts} client:load/>
+    <Gallery images={data.Works.Emote} client:load/>
     <h2>Cosplay projects:</h2>
 
 </Layout>
