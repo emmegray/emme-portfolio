@@ -6,6 +6,9 @@ import {Gallery} from '../components/Gallery';
 const allProjects = await getCollection("projects");
 const pageTitle = "Works";
 import { data } from "../content/data"
+
+const artsEntries = await getCollection("arts")
+
 ---
 <Layout pageTitle={pageTitle}>
     <h2 class="white-line">Works</h2>
@@ -18,10 +21,10 @@ import { data } from "../content/data"
             title={card.data.title} 
         />)}
     </ul>
-    <h2>Art projects</h2>
-    <Gallery images={data.Works.Arts} client:load/>
-    <Gallery images={data.Works.Emote} client:load/>
-    <h2>Cosplay projects:</h2>
+    <h2>Arts projects:</h2>
+    <Gallery images={artsEntries.map(({data}) => ({...data}))} client:load/>
+    <h2>Emote & Badge commissions:</h2>
+    <Gallery images={data.Works.Emote} page="emotes" client:load/>
 
 </Layout>
 
