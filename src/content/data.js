@@ -78,6 +78,7 @@ export const data = {
   Contact: {
     Intro: "Get in Touch!",
     Subtext: "Want to work together or have any questions?",
+    Mail: "manuelaienuso@gmail.com",
     Socials: [
       {
         name: "Email",
@@ -214,7 +215,7 @@ export const data = {
         src: "public/arts/Logo Marco 01.png",
       },
       {
-        alt: "Request Twitch - Dancer",
+        alt: "Request Twitch - Dancers",
         src: "public/arts/Request Twitch - Lucho.png",
       },
       {
@@ -240,6 +241,22 @@ export const data = {
       {
         alt: "Twitch animation commission for NeoGianfo",
         src: "public/arts/Hey Maan - neoGianfo animazione.gif",
+      },
+      {
+        alt: "DARQ",
+        src: "public/arts/Darq.png",
+      },
+      {
+        alt: "Inktober 2017",
+        src: "public/arts/INKTOBER - 11.png",
+      },
+      {
+        alt: "Take care",
+        src: "public/arts/Take care of yourself - Trevor.png",
+      },
+      {
+        alt: "Twitch animation for Lucho",
+        src: "public/arts/Lucho-Gnam-Gnam.gif",
       },
     ],
     Emote: [

@@ -16,4 +16,4 @@ website: https://emme-boolzapp.netlify.app/
 github: https://github.com/emmegray/vue-boolzapp
 ---
 
-Coming soon
+Simple replica of WhatsApp made with HTML, CSS and JavaScript. You can write in the chat and send messages and also receive replies! :o

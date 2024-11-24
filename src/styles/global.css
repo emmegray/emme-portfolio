@@ -23,6 +23,7 @@ html {
   background: rgb(99, 14, 20);
   background: radial-gradient(circle, rgba(99, 14, 20, 1) 0%, rgba(179, 41, 69, 1) 100%);
   color: var(--text);
+  cursor: url('/public/material/Grumpy.png') !important;
 }
 
 body {
@@ -108,9 +109,9 @@ header a:hover::before {
 /* Other cool stuff */
 
 /* Cursor custom */
-/* a{
-  cursor: url('/public/material/PAT.png'), auto !important;
-} */
+* {
+  cursor: url('/public/material/Grumpy.png') !important;
+} 
 
 #emme-patata {
   -webkit-animation: mover 2s infinite alternate;
@@ -475,7 +476,7 @@ button {
   z-index: 3;
 }
 
-.image-popup img {
+.image-popup > img {
   border-radius: 32px;
   width: auto;
   max-width: calc(100% - 64px);

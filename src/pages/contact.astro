@@ -1,0 +1,26 @@
+---
+import { getCollection } from "astro:content";
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+const allProjects = await getCollection("projects");
+const pageTitle = "Works";
+import { data } from "../content/data"
+
+const artsEntries = await getCollection("arts")
+
+---
+<Layout pageTitle={pageTitle}>
+
+  <h2 class="white-line">{data.Contact.Intro}</h2>
+  <div style="text-align: left;">
+    <p style="margin: 0;">
+      Mail me here:
+    </p>
+    <p>{data.Contact.Mail}</p>
+
+    {data.Contact.Socials.map((social) => (
+              <a href={social.link}><i class={social.icon} style="color: white; font-size: large; padding:10px"></i></a>
+    ))}
+  </div>
+</Layout>
+

@@ -21,7 +21,7 @@ const artsEntries = await getCollection("arts")
             title={card.data.title} 
         />)}
     </ul>
-    <h2>Arts projects:</h2>
+    <h2>Arts projects & commissions:</h2>
     <Gallery images={artsEntries.map(({data}) => ({...data}))} client:load/>
     <h2>Emote & Badge commissions:</h2>
     <Gallery images={data.Works.Emote} page="emotes" client:load/>

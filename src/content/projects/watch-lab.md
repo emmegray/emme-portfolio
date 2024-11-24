@@ -1,6 +1,6 @@
 ---
 title: 'Watch Lab'
-description: 'Coming soon'
+description: 'Replica of a landing page inspired by a luxury goods store. Created with Next.js and SCSS. Fully responsive.'
 image:
     url: '/watch-lab.png'
     alt: 'GitHub wallpaper'
@@ -16,4 +16,4 @@ website: https://github.com/emmegray/watch-lab
 github: https://watch-lab.vercel.app/
 ---
 
-Coming soon
+Replica of a landing page inspired by a luxury goods store. Created with Next.js and SCSS. Fully responsive.
