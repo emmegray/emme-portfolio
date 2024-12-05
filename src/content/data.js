@@ -152,71 +152,67 @@ export const data = {
     Arts: [
       {
         alt: "Moonlight, fan art of John Martson from Red Dead Redemption for lights practice",
-        src: "public/arts/Moonlight.png",
+        src: "public/arts/moonlight.png",
       },
       {
-        alt: "Fan art of Ash Williams from Army of Darkness",
-        src: "public/arts/Ash - Evil Dead doodle.png",
-      },
-      {
-        alt: "Love over everything",
-        src: "public/arts/Commission Braindamage97 - FF7.png",
+        alt: "Fan art of Ash Williams from the movie Army of Darkness",
+        src: "public/arts/ash.png",
       },
       {
         alt: "Love over everything",
-        src: "public/arts/Commission Braindamage97 - FF7.png",
+        src: "public/arts/ff7.png",
       },
       {
         alt: "Commission Xhenarjo",
-        src: "public/arts/Commission - Xhenarjo 2.png",
+        src: "public/arts/xhenarjo.png",
       },
       {
         alt: "Happy 11 anniversary RDR!",
-        src: "public/arts/Happy 11 Aniversary RDR.png",
+        src: "public/arts/rdr-anniversary.png",
       },
       {
         alt: "Lonely Wizard",
-        src: "public/arts/Inscryption - Lonely Wizard.png",
+        src: "public/arts/inscryption.png",
       },
       {
         alt: "Hannya man",
-        src: "public/arts/MajiMonth2020 - Hannya.png",
+        src: "public/arts/hannya.png",
       },
       {
         alt: "Chill",
-        src: "public/arts/RDR II fan art - Twitch Request.png",
+        src: "public/arts/rdr-chill.png",
       },
       {
         alt: "Ieiri Leo stempunk",
-        src: "public/arts/Talyn Ieiri Leo stampunk - Twitch Request.png",
+        src: "public/arts/steampunk.png",
       },
       {
         alt: "Thomas",
-        src: "public/arts/Thomas.png",
+        src: "public/arts/thomas.png",
       },
       {
         alt: "Shiraishi doodle",
-        src: "public/arts/Golden Kamui - Shiraishi doodle.png",
+        src: "public/arts/shiraishi.png",
       },
       {
         alt: "Golden Kamuy onsen",
-        src: "public/arts/Golden Kamuy onsen.png",
+        src: "public/arts/onsen.png",
       },
       {
         alt: "Knot",
-        src: "public/arts/Inktober 2021 - 4 KNOT RB.png",
+        src: "public/arts/knot.png",
       },
       {
         alt: "Flame",
-        src: "public/arts/Inktober 2022 - 5 FLAME RB.png",
+        src: "public/arts/flame.png",
       },
       {
         alt: "Commissioned logo Marco",
-        src: "public/arts/Logo Marco 01.png",
+        src: "public/arts/marco.png",
       },
       {
         alt: "Request Twitch - Dancers",
-        src: "public/arts/Request Twitch - Lucho.png",
+        src: "public/arts/lucho-request.png",
       },
       {
         alt: "Raiden",

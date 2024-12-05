@@ -1,9 +1,11 @@
 ---
 title: '"DARQ"'
-src: '/arts/Darq.png'
+src: '/arts/darq.png'
+thumbnail: '/art/thumbnail/darq.png'
 alt: 'Sposa'
 year: 2017
 tool: Traditional drawing with pencil and ink colors, mixed technique
 ---
 
-Sposa
+Fan art for the art contest of the indie game DARQ.
+
