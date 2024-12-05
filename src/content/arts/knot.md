@@ -1,6 +1,7 @@
 ---
 title: '"Inktober - KNOT"'
-src: '/arts/Inktober 2021 - 4 KNOT RB.png'
+src: '/arts/knot.png'
+thumbnail: '/art/thumbnail/knot.png'
 alt: 'Inktober 2021 - KNOT'
 year: 2021
 tool: Clip Studio Paint

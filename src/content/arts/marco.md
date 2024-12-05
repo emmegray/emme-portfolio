@@ -1,6 +1,7 @@
 ---
 title: '"Logo arts commission for Marco"'
-src: '/arts/Logo Marco 01.png'
+src: '/arts/marco.png'
+thumbnail: '/art/thumbnail/marco.png'
 alt: 'Logo arts commission for Marco'
 year: 2021
 tool: Clip Studio Paint

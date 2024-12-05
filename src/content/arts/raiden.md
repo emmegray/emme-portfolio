@@ -1,6 +1,7 @@
 ---
 title: '"Raiden"'
-src: '/arts/Request Twitch - Semola Raiden.png'
+src: '/arts/raiden.png'
+thumbnail: '/art/thumbnail/raiden.png'
 alt: 'Twitch request - Dancers'
 year: 2020
 tool: Clip Studio Paint
