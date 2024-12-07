@@ -1,7 +1,7 @@
 ---
 title: '"Inktober - FLAME"'
 src: '/arts/flame.png'
-thumbnail: '/art/thumbnail/flame.png'
+thumbnail: '/arts/thumbnail/flame.png'
 alt: 'Inktober 2022 - 5 FLAME'
 year: 2022
 tool: Clip Studio Paint

@@ -25,6 +25,11 @@ import { data } from "../content/data"
       I'm a creative chill person with the passion of learning new things while destroying them to understand how they work.<br>
       If you are curious to know more about me feel free to browse this portfolio to see my work and more!
     </p>
-    
+    <p>
+    {data.Contact.Socials.map((social) => (
+      <a href={social.link}><i class={social.icon} style="color: white; font-size: large; padding:10px"></i></a>
+))}
+    </p>
+
 </Layout>
 

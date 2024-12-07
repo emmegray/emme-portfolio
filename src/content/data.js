@@ -152,178 +152,178 @@ export const data = {
     Arts: [
       {
         alt: "Moonlight, fan art of John Martson from Red Dead Redemption for lights practice",
-        src: "public/arts/moonlight.png",
+        src: "/arts/moonlight.png",
       },
       {
         alt: "Fan art of Ash Williams from the movie Army of Darkness",
-        src: "public/arts/ash.png",
+        src: "/arts/ash.png",
       },
       {
         alt: "Love over everything",
-        src: "public/arts/ff7.png",
+        src: "/arts/ff7.png",
       },
       {
         alt: "Commission Xhenarjo",
-        src: "public/arts/xhenarjo.png",
+        src: "/arts/xhenarjo.png",
       },
       {
         alt: "Happy 11 anniversary RDR!",
-        src: "public/arts/rdr-anniversary.png",
+        src: "/arts/rdr-anniversary.png",
       },
       {
         alt: "Lonely Wizard",
-        src: "public/arts/inscryption.png",
+        src: "/arts/inscryption.png",
       },
       {
         alt: "Hannya man",
-        src: "public/arts/hannya.png",
+        src: "/arts/hannya.png",
       },
       {
         alt: "Chill",
-        src: "public/arts/rdr-chill.png",
+        src: "/arts/rdr-chill.png",
       },
       {
         alt: "Ieiri Leo stempunk",
-        src: "public/arts/steampunk.png",
+        src: "/arts/steampunk.png",
       },
       {
         alt: "Thomas",
-        src: "public/arts/thomas.png",
+        src: "/arts/thomas.png",
       },
       {
         alt: "Shiraishi doodle",
-        src: "public/arts/shiraishi.png",
+        src: "/arts/shiraishi.png",
       },
       {
         alt: "Golden Kamuy onsen",
-        src: "public/arts/onsen.png",
+        src: "/arts/onsen.png",
       },
       {
         alt: "Knot",
-        src: "public/arts/knot.png",
+        src: "/arts/knot.png",
       },
       {
         alt: "Flame",
-        src: "public/arts/flame.png",
+        src: "/arts/flame.png",
       },
       {
         alt: "Commissioned logo Marco",
-        src: "public/arts/marco.png",
+        src: "/arts/marco.png",
       },
       {
         alt: "Request Twitch - Dancers",
-        src: "public/arts/lucho-request.png",
+        src: "/arts/lucho-request.png",
       },
       {
         alt: "Raiden",
-        src: "public/arts/Request Twitch - Semola Raiden.png",
+        src: "/arts/Request Twitch - Semola Raiden.png",
       },
       {
         alt: "Commissioned logo for Roberto",
-        src: "public/arts/Roberto Papiri logo A4 anteprima.png",
+        src: "/arts/Roberto Papiri logo A4 anteprima.png",
       },
       {
         alt: "Sposa",
-        src: "public/arts/sposa.png",
+        src: "/arts/sposa.png",
       },
       {
         alt: "Visual novel experiment",
-        src: "public/arts/visual-novel-test.gif",
+        src: "/arts/visual-novel-test.gif",
       },
       {
         alt: "Zhao",
-        src: "public/arts/Zhao.png",
+        src: "/arts/Zhao.png",
       },
       {
         alt: "Twitch animation commission for NeoGianfo",
-        src: "public/arts/Hey Maan - neoGianfo animazione.gif",
+        src: "/arts/Hey Maan - neoGianfo animazione.gif",
       },
       {
         alt: "DARQ",
-        src: "public/arts/Darq.png",
+        src: "/arts/Darq.png",
       },
       {
         alt: "Inktober 2017",
-        src: "public/arts/INKTOBER - 11.png",
+        src: "/arts/INKTOBER - 11.png",
       },
       {
         alt: "Take care",
-        src: "public/arts/Take care of yourself - Trevor.png",
+        src: "/arts/Take care of yourself - Trevor.png",
       },
       {
         alt: "Twitch animation for Lucho",
-        src: "public/arts/Lucho-Gnam-Gnam.gif",
+        src: "/arts/Lucho-Gnam-Gnam.gif",
       },
     ],
     Emote: [
       {
         alt: "Twitch emote commission Lucho set 1",
-        src: "public/emote/Twitch commission - Lucho emote showcase 1.png",
+        src: "/emote/Twitch commission - Lucho emote showcase 1.png",
         slug:"lucho"
       },
       {
         alt: "Twitch emote commission Lucho set 2",
-        src: "public/emote/Twitch commission - Lucho emote showcase 2.png",
+        src: "/emote/Twitch commission - Lucho emote showcase 2.png",
         slug:"lucho"
       },
       {
         alt: "Twitch emote commission Lucho set 3",
-        src: "public/emote/Twitch commission - Lucho emote showcase 3.gif",
+        src: "/emote/Twitch commission - Lucho emote showcase 3.gif",
         slug:"lucho"
       },
       {
         alt: "Twitch emote commission Lucho set 4",
-        src: "public/emote/Twitch commission - Lucho emote showcase 4.png",
+        src: "/emote/Twitch commission - Lucho emote showcase 4.png",
         slug:"lucho"
       },
       {
         alt: "Twitch emote commission MetalZarko set 2",
-        src: "public/emote/Twitch commission - MetalZarko emote showcase 2.png",
+        src: "/emote/Twitch commission - MetalZarko emote showcase 2.png",
         slug:"zarko"
       },
       {
         alt: "Twitch emote commission MetalZarko set 1",
-        src: "public/emote/Twitch commission - MetalZarko emote showcase.png",
+        src: "/emote/Twitch commission - MetalZarko emote showcase.png",
         slug:"zarko"
       },
       {
         alt: "Twitch emote commission Prongedleaf",
-        src: "public/emote/Twitch commission - Prongedleaf emote showcase.png",
+        src: "/emote/Twitch commission - Prongedleaf emote showcase.png",
         slug:"leaf"
       },
       {
         alt: "Twitch emote commission Saetta set 1",
-        src: "public/emote/Twitch commission - Saetta badges showcase 1.gif",
+        src: "/emote/Twitch commission - Saetta badges showcase 1.gif",
         slug:"saetta"
       },
       {
         alt: "Twitch badge commission Saetta",
-        src: "public/emote/Twitch commission - Saetta badges showcase.png",
+        src: "/emote/Twitch commission - Saetta badges showcase.png",
         slug:"saetta"
       },
       {
         alt: "Twitch badge commission Stormy",
-        src: "public/emote/Twitch commission - showcase Stormy.png",
+        src: "/emote/Twitch commission - showcase Stormy.png",
         slug:"stormy"
       },
       {
         alt: "Twitch emote commission Elly",
-        src: "public/emote/Twitch commission showcase 2.png",
+        src: "/emote/Twitch commission showcase 2.png",
         slug:"elly"
       },
       {
         alt: "Twitch emote commission Elly",
-        src: "public/emote/Twitch commission showcase.gif",
+        src: "/emote/Twitch commission showcase.gif",
         slug:"elly"
       },
       {
         alt: "Twitch emote commission Crash",
-        src: "public/emote/twitch_emote_commission___crashthetwitch_nier_2.gif",
+        src: "/emote/twitch_emote_commission___crashthetwitch_nier_2.gif",
         slug:"crash"
       },
       {
         alt: "Twitch emote commission Crash",
-        src: "public/emote/twitch_emote_commission___crashthetwitch_nier_set_1.png",
+        src: "/emote/twitch_emote_commission___crashthetwitch_nier_set_1.png",
         slug:"crash"
       },
     ]
