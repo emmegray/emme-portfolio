@@ -5,7 +5,7 @@ export const data = {
       { name: "About", link: "/about" },
       { name: "Works", link: "/works" },
      // { name: "Posts", link: "/posts" },
-      { name: "Contact", link: "/contact" },
+    // { name: "Contact", link: "/contact" },
     ],
   },
 

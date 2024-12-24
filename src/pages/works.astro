@@ -18,7 +18,7 @@ const artsEntries = await getCollection("arts")
         {allProjects.map((card) => <Card 
             url={`/projects/${card.slug}/`} 
             image={card.data.image.url} 
-            title={card.data.title} 
+            title={card.data.title} +.
         />)}
     </ul>
     <h2>Arts projects & commissions:</h2>
@@ -26,5 +26,14 @@ const artsEntries = await getCollection("arts")
     <h2>Emote & Badge commissions:</h2>
     <Gallery images={data.Works.Emote} page="emotes" client:load/>
 
+    <div id="emme-show" class="white-line shake-horizontal" style="padding-bottom: 0;">
+      <img
+        src="/material/Emme che fa vedere cose.png"
+        alt="Emme che mostra cose"
+        width="340"
+        loading="lazy"
+        class="shake-horizontal"
+      />
+    </div>
 </Layout>
 

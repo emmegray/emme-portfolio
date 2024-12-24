@@ -26,5 +26,7 @@ const projectsCollection = defineCollection({
 
 export const collections = {
   projects: projectsCollection,
+  arts: artsCollection,
+  emote: emoteCollection,
 };
 
