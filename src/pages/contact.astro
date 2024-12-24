@@ -16,9 +16,10 @@ const artsEntries = await getCollection("arts")
     <p style="margin: 0;">
       Mail me here:
     </p>
-  
     <p><a href="mailto:manuelaienuso@gmail.com"><i class="fa-solid fa-envelope" style=" vertical-align: middle;"></i> {data.Contact.Mail}</a></p>
-
+    <p style="margin: 0;">
+      Social:
+    </p>
     {data.Contact.Socials.map((social) => (
               <a href={social.link}><i class={social.icon} style="color: white; font-size: large; padding:10px"></i></a>
     ))}

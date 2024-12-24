@@ -13,10 +13,10 @@ export const Gallery = ({ images = data.Works.Arts, page = "arts" }) => {
   const image = images[slide];
   return (
     <>
-      <div class="image-gallery">
+      <div className="image-gallery">
         <AnimatePresence initial={false}>
           <motion.a key={slide} initial={{ opacity: 0 }} animate={{ opacity: 1, zIndex: 1 }} exit={{ opacity: 0, zIndex: 0 }} transition={{ duration: 1 }} href={image?.slug ? "/" + page + "/" + image.slug : undefined} onClick={() => !image.slug && setOpen(true)}>
-            <motion.img src={image?.thumbnail ?? image?.src ?? ""} alt={image.alt} />
+            <motion.img src={image?.thumbnail ?? image?.src ?? ""} />
           </motion.a>
         </AnimatePresence>
       </div>
