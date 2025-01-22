@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@astrojs/react": "^4.1.2",
+    "@emotion/react": "^11.14.0",
     "@fortawesome/fontawesome-svg-core": "^6.6.0",
     "@fortawesome/free-solid-svg-icons": "^6.6.0",
     "@fortawesome/react-fontawesome": "^0.2.2",
@@ -18,14 +19,14 @@
     "@types/bootstrap": "^5.2.10",
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
-    "astro": "^5.1.1",
+    "astro": "^5.1.7",
     "astro-bootstrap": "^0.7.0",
-    "astro-carousel": "^5.1.1",
     "bootstrap": "^5.3.3",
     "motion": "^11.11.17",
     "react": "^18.3.1",
+    "react-awesome-reveal": "^4.3.1",
     "react-dom": "^18.3.1",
-    "react-reveal": "^18.3.1",
+    "vite": "^6.0.7",
     "webcoreui": "^0.8.1"
   },
   "devDependencies": {
