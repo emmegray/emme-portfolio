@@ -12,8 +12,8 @@ worksImage2:
     alt: 'second image of your project.'
 platform: Web
 stack: JavaScript, SCSS, Next.js
-website: https://github.com/emmegray/watch-lab
-github: https://watch-lab.vercel.app/
+website: https://watch-lab.vercel.app/
+github: https://github.com/emmegray/watch-lab
 ---
 
 Replica of a landing page inspired by a luxury goods store. Created with Next.js and SCSS. Fully responsive.
