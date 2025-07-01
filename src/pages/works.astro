@@ -11,8 +11,6 @@ const artsEntries = await getCollection("arts")
 
 ---
 <Layout pageTitle={pageTitle}>
-    <h2 class="white-line">Works</h2>
-    <br>
     <h2>Code projects:</h2>
     <ul role="list" class="link-card-grid">
         {allProjects.map((card) => <Card 
@@ -21,6 +19,8 @@ const artsEntries = await getCollection("arts")
             title={card.data.title} +.
         />)}
     </ul>
+    <span class="white-line"></span>
+    <br>
     <h2>Arts projects & commissions:</h2>
     <Gallery images={artsEntries.map(({data}) => ({...data}))} client:load/>
     <h2>Emote & Badge commissions:</h2>
