@@ -11,7 +11,7 @@ export const data = {
 
   About: {
     Intro:
-      "Always been passionate about the world of art and technology, already at the age of 13 I began to self-taught the basics of digital and traditional design. I'm also a great lover of video games, comics and cinema, I especially love the horror genre and everything that has a exciting plot!",
+      "Always been passionate about the world of art and technology, already at the age of 13 I began to self-teach the basics of digital and traditional design. I'm also a great lover of video games, comics and cinema, I especially love the horror genre and everything that has a exciting plot!",
     Experiences: [
       {
         company: "Class Editori",

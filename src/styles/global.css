@@ -157,7 +157,7 @@ header a:hover::before {
   padding-bottom: 10px;
 }
 
-.polaroid a {
+.polaroid span {
   font-family: var(--header);
   background: #ffffff;
   display: inline-block;
@@ -175,7 +175,7 @@ header a:hover::before {
   position: relative;
 }
 
-.polaroid a:after {
+.polaroid span:after {
   color: #333;
   font-size: 25px;
   content: attr(title);
