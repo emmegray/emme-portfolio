@@ -20,13 +20,14 @@ import { data } from "../content/data"
       <h2>
         a Front-end Developer, Digital 2D Artist and Twitch Streamer from Italy
       </h2>
-    <p class="white-line">
+    <p>
       I'm a creative chill person with the passion of learning new things while destroying them to understand how they work.<br>
       If you are curious to know more about me feel free to browse this portfolio to see my work and more!
     </p>
-    <p>
+      <div class="h-divider"><div class="shadow"></div></div>
+    <p style="text-align: center;">
     {data.Contact.Socials.map((social) => (
-      <a href={social.link} target="_blank"><i class={social.icon} style="color: white; font-size: large; padding:10px"></i></a>
+      <a href={social.link} target="_blank"><i class={social.icon} style="color: white; font-size: large; padding:10px;"></i></a>
 ))}
     </p>
 

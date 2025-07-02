@@ -293,15 +293,17 @@ header a:hover::before {
 }
 
 /* Cards */
+
 .card {
   list-style: none;
   display: flex;
-  background-size: 400%;
-  padding: 20px;
+  width: auto;
+  background: white;
+  padding: .4em;
+  border-radius: 6px;
 }
 
 .card__link {
-  width: 100%;
   text-decoration: none;
   line-height: 1.4;
   border-radius: 8px;
@@ -309,14 +311,16 @@ header a:hover::before {
 }
 
 .card__img {
-  border-radius: 16px;
+  width: 100%;
+  border-radius: 6px 6px 0 0;
 }
 
 .card__title {
-  margin: 0;
-  font-family: var(--body);
-  font-size: 1.5rem;
-  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 1.3em;
+  font-weight: 600;
+  color: #b52727;
+  padding: 0px 7px 0;
   text-align: center;
 }
 
@@ -329,13 +333,14 @@ header a:hover::before {
 }
 
 .card__link:hover {
-  transform: scale(1.05);
+  transform: scale(0.98);
 }
 
 .link-card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-  gap: 1rem;
+  gap: 2rem;
+  margin: 0 auto;
   padding: 0;
 }
 
@@ -555,10 +560,9 @@ button {
 
 /* Divider */
 .h-divider {
-  margin: auto;
-  width: 80%;
+  width: 100%;
   position: relative;
-  margin-top: 40px;
+  margin-top: 50px;
 }
 
 .h-divider .shadow {
