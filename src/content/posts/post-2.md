@@ -1,6 +1,5 @@
 ---
 title: 'Post 2'
-author: Tristen Tomczak
 date: '09-09-2024'
 image:
     url: '/blog-post.webp'
