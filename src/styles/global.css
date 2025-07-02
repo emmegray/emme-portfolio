@@ -300,7 +300,6 @@ header a:hover::before {
   width: auto;
   background: white;
   padding: .4em;
-  border-radius: 6px;
 }
 
 .card__link {
@@ -312,7 +311,6 @@ header a:hover::before {
 
 .card__img {
   width: 100%;
-  border-radius: 6px 6px 0 0;
 }
 
 .card__title {
@@ -355,6 +353,7 @@ header a:hover::before {
 }
 
 /* Footer */
+
 footer {
   margin: 4rem 0;
 }
