@@ -538,3 +538,64 @@ button {
 .contact a{
   text-decoration: none;
 }
+
+/* Icon 
+
+.icon-bounce-in {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+
+*/
+
+/* Divider */
+.h-divider {
+  margin: auto;
+  width: 80%;
+  position: relative;
+  margin-top: 40px;
+}
+
+.h-divider .shadow {
+  overflow: hidden;
+  height: 20px;
+}
+
+.h-divider .shadow:after {
+  content: '';
+  display: block;
+  margin: -25px auto 0;
+  width: 100%;
+  height: 25px;
+  border-radius: 125px/12px;
+  box-shadow: 0 0 8px rgb(255, 255, 255);
+}
+
+.h-divider .text {
+  height: 60px;
+  padding: 10px;
+  position: absolute;
+  bottom: 100%;
+  margin-bottom: -33px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 100%;
+  text-align: center;
+}
+
+.h-divider .text h2 {
+  position: relative;
+  top: 40%; /* Cambiato da 50% a 40% per spostare il testo più in su */
+  transform: translateY(-50%);
+  border-radius: 100%;
+  text-align: center;
+  font-style: normal;
+  color: #ffffff;
+  white-space: nowrap;
+  margin-top: -10px; /* Aggiunto margine negativo per spostare il testo più in su */
+}

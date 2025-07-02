@@ -11,7 +11,10 @@ const artsEntries = await getCollection("arts")
 
 ---
 <Layout pageTitle={pageTitle}>
-    <h2>Code projects:</h2>
+  <div class="h-divider">
+  <div class="shadow"></div>
+  <div class="text"><h2>Code projects:</h2></div></div>
+
     <ul role="list" class="link-card-grid">
         {allProjects.map((card) => <Card 
             url={`/projects/${card.slug}/`} 
@@ -19,11 +22,18 @@ const artsEntries = await getCollection("arts")
             title={card.data.title} +.
         />)}
     </ul>
-    <span class="white-line"></span>
-    <br>
-    <h2>Arts projects & commissions:</h2>
+
+      <div class="h-divider">
+  <div class="shadow"></div>
+  <div class="text"><h2>Arts projects:</h2></div></div>
+
+    
     <Gallery images={artsEntries.map(({data}) => ({...data}))} client:load/>
-    <h2>Emote & Badge commissions:</h2>
+    
+    <div class="h-divider">
+  <div class="shadow"></div>
+  <div class="text"><h2>Design & Graphics:</h2></div></div>
+      
     <Gallery images={data.Works.Emote} page="emotes" client:load/>
 
     <div id="emme-show" class="white-line shake-horizontal" style="padding-bottom: 0;">
