@@ -17,19 +17,17 @@ export const data = {
         company: "Class Editori",
         title: "Junior Web Designer",
         subtitle: "Class Editori S.p.A. - July 2023",
-        description: "Member of the tech IT team where I developed:",
         skills: [
           "website development and maintenance using C#,",
           "frontend development and web marketing campaign design,",
-          "creation and development of DEM and landing page,",
-          "management and optimization of tags and funnels and SEO optimization of digital properties."
+          "creation and development of Email Marketing (DEM) and landing page,",
+          "management and optimization of tags, funnels and SEO optimization of digital properties."
         ],
       },
       {
         company: "Entiende",
         title: "Web Developer",
-        subtitle: "Entiende S.r.l. - December 2022",
-        description: "Member of the tech IT team where I developed:",
+        subtitle: "Entiende S.r.l. - December 2022 - July 2023",
         skills: [
           "landing pages made in React and using TypeScript,",
           "management of the CRM (release and server) created with Angular, MongoDB and Sequelize,",
@@ -43,8 +41,8 @@ export const data = {
         subtitle: "Boolean Careers - February - September 2022",
         description: `Full Stack Development course where I learned to:`,
         skills: [
-          "created layout using semantic HTML5, CSS3, Bootstrap replicating web pages like Dropbox and Discord,",
-          "wrote small interfaces with Vue.js and vanilla JavaScript inspired by Netflix and Spotify,",
+          "created layout using semantic HTML5, CSS3 and Bootstrap replicating web pages,",
+          "wrote small interfaces with Vue.js and vanilla JavaScript,",
           "created PHP/Laravel applications and SQL scripts,",
           "carried out final project (webapp inspired by Airbnb) in team managing everything via Git taking care of the development of the front-end part with Vue.js"
         ],
@@ -53,7 +51,7 @@ export const data = {
         company: "Twitch",
         title: "Twitch Streamer Affiliate",
         subtitle: "Twitch - December 2017",
-        description: `On the platform I have:`,
+        description: ``,
         skills: [
           "made contents of illustration, cosplay, DIY, talk and gameplay,",
           "work on the graphics, video and audio editing, managed moderation, communication on social media and community building,",

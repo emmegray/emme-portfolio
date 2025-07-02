@@ -23,7 +23,7 @@ html {
   background: rgb(99, 14, 20);
   background: radial-gradient(circle, rgba(99, 14, 20, 1) 0%, rgba(179, 41, 69, 1) 100%);
   color: var(--text);
-  cursor: url('/public/material/Grumpy.png') !important;
+  cursor: url("/public/material/Grumpy.png") !important;
 }
 
 body {
@@ -38,11 +38,11 @@ body {
 
 @keyframes fadeInAnimation {
   0% {
-      opacity: 0;
+    opacity: 0;
   }
 
   100% {
-      opacity: 1;
+    opacity: 1;
   }
 }
 
@@ -124,8 +124,8 @@ header a:hover::before {
 
 /* Cursor custom */
 * {
-  cursor: url('/public/material/Grumpy.png') !important;
-} 
+  cursor: url("/public/material/Grumpy.png") !important;
+}
 
 #emme-patata {
   -webkit-animation: mover 2s infinite alternate;
@@ -224,10 +224,27 @@ header a:hover::before {
 
 #about-card {
   --bs-bg-opacity: 1;
-  background-color: rgb(33 37 41) !important;
-  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.8px);
+  -webkit-backdrop-filter: blur(6.8px);
   padding: 1rem;
   margin-bottom: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: transform 0.1s ease;
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+
+#about-card div {
+  position: relative;
+  z-index: 1;
+  transition: transform 0.3s ease;
+}
+
+#about-card:hover  {
+  transform: translateZ(12px);
 }
 
 #about-card h2 {
@@ -247,7 +264,7 @@ header a:hover::before {
 
 #about-card ul {
   margin: 0;
-  padding: 20px 20px 0;
+  padding: 5px 20px 0;
 }
 
 #about-card li {
@@ -299,7 +316,17 @@ header a:hover::before {
   display: flex;
   width: auto;
   background: white;
-  padding: .4em;
+  padding: 0.4em;
+  -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.card:hover {
+  transform: scale(1.05) rotate(2deg);
 }
 
 .card__link {
@@ -328,10 +355,6 @@ header a:hover::before {
   text-indent: 0;
   text-align: center;
   margin: 0.5rem 0 0;
-}
-
-.card__link:hover {
-  transform: scale(0.98);
 }
 
 .link-card-grid {
@@ -459,7 +482,6 @@ footer {
   cursor: zoom-in;
 }
 
-
 .btn-gallery {
   display: flex;
   flex-direction: row;
@@ -493,7 +515,6 @@ button {
   grid-row: 1;
   background-color: #00000075;
   z-index: 3;
-
 }
 
 .image-popup > img {
@@ -522,24 +543,24 @@ button {
   text-align: center;
 }
 
-.image-popup-card ul{
+.image-popup-card ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.image-popup-card ul{
+.image-popup-card ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.image-popup-card a{
+.image-popup-card a {
   color: #fafafa;
   text-decoration: none;
 }
 
-.contact a{
+.contact a {
   text-decoration: none;
 }
 
@@ -570,7 +591,7 @@ button {
 }
 
 .h-divider .shadow:after {
-  content: '';
+  content: "";
   display: block;
   margin: -25px auto 0;
   width: 100%;
