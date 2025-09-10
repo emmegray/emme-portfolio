@@ -1,8 +1,8 @@
 ---
 title: '"DARQ"'
-src: '/arts/darq.png'
+src: '/arts/Darq.png'
 thumbnail: '/arts/thumbnail/darq.png'
-alt: 'Sposa'
+alt: 'DARQ'
 year: 2017
 tool: Traditional drawing with pencil and ink colors, mixed technique
 ---
