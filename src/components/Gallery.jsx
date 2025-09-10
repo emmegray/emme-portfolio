@@ -42,9 +42,6 @@ export const Gallery = ({ images = data.Works.Arts, page = "arts" }) => {
         </div>
         <button onClick={() => setOpen(false)}>X</button>
         
-  
-
-
       </motion.div>}
     </>
   );

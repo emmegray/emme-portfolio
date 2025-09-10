@@ -214,11 +214,11 @@ export const data = {
       },
       {
         alt: "Raiden",
-        src: "/arts/Request Twitch - Semola Raiden.png",
+        src: "/arts/raiden.png",
       },
       {
         alt: "Commissioned logo for Roberto",
-        src: "/arts/Roberto Papiri logo A4 anteprima.png",
+        src: "/arts/roberto.png",
       },
       {
         alt: "Sposa",
@@ -230,27 +230,27 @@ export const data = {
       },
       {
         alt: "Zhao",
-        src: "/arts/Zhao.png",
+        src: "/arts/zhao.png",
       },
       {
         alt: "Twitch animation commission for NeoGianfo",
-        src: "/arts/Hey Maan - neoGianfo animazione.gif",
+        src: "/arts/gianfo.gif",
       },
       {
         alt: "DARQ",
-        src: "/arts/Darq.png",
+        src: "/arts/darq.png",
       },
       {
         alt: "Inktober 2017",
-        src: "/arts/INKTOBER - 11.png",
+        src: "/arts/inktober-11.png",
       },
       {
         alt: "Take care",
-        src: "/arts/Take care of yourself - Trevor.png",
+        src: "/arts/trevor.png",
       },
       {
         alt: "Twitch animation for Lucho",
-        src: "/arts/Lucho-Gnam-Gnam.gif",
+        src: "/arts/lucho-gnam.gif",
       },
     ],
     Emote: [

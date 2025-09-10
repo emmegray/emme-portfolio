@@ -6,11 +6,13 @@ import {Gallery} from '../components/Gallery';
 const allProjects = await getCollection("projects");
 const pageTitle = "Works";
 import { data } from "../content/data"
+import Thumbnail from "../components/Thumbnail.astro";
 
 const artsEntries = await getCollection("arts")
 
 ---
 <Layout pageTitle={pageTitle}>
+
   <div class="h-divider">
   <div class="shadow"></div>
   <div class="text"><h2>Code projects:</h2></div></div>
@@ -27,8 +29,7 @@ const artsEntries = await getCollection("arts")
   <div class="shadow"></div>
   <div class="text"><h2>Arts projects:</h2></div></div>
 
-    
-    <Gallery images={artsEntries.map(({data}) => ({...data}))} client:load/>
+    <Thumbnail />
     
     <div class="h-divider">
   <div class="shadow"></div>

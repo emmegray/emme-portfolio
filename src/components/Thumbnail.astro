@@ -1,7 +1,4 @@
 ---
-// Copyright (c) Pascal Brand
-// MIT License
-
 import { Swiper, SwiperWrapper, SwiperSlide, SwiperButtonPrev, SwiperButtonNext } from "astro-swiper";
 import { data } from "../content/data";
 
@@ -57,34 +54,3 @@ const images = data.Works.Arts.map(item => item.src)
     }
   </SwiperWrapper>
 </Swiper>
-
-<style>
-  .swiper {
-    max-width: 455px;
-  }
-
-  img {
-    width: 100%;
-  }
-
-  .myswiper-thumbnail {
-    height: 25%;
-  }
-
-  .myswiper-thumbnail .swiper-wrapper {
-    box-sizing: border-box;
-    padding: 10px 0;
-    height: 100%;
-  }
-
-  .myswiper-thumbnail .swiper-slide {
-    width: 25%;
-    height: 100%;
-    opacity: 0.4;
-  }
-
-  .myswiper-thumbnail .swiper-slide-thumb-active {
-    opacity: 1;
-  }
-
-</style>

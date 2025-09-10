@@ -449,6 +449,7 @@ footer {
 }
 
 /* Gallery */
+
 .container {
   width: 100%;
   height: 100vh;
@@ -562,6 +563,108 @@ button {
 
 .contact a {
   text-decoration: none;
+}
+
+/* Thumbnail */
+
+.myswiper-main {
+    border-radius: 32px;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+    border-radius: 16px;
+    cursor: zoom-in;
+  }
+
+  img {
+    width: 100%;
+    position: relative;
+    display: grid;
+    overflow: hidden;
+  }
+
+  .swiper-wrapper{
+    display: flex;
+    align-items: center;
+  }
+
+  .myswiper-thumbnail {
+    height: 25%;
+  }
+
+  .myswiper-thumbnail .swiper-wrapper {
+    box-sizing: border-box;
+    padding: 10px 0;
+    height: 100%;
+  }
+
+  .myswiper-thumbnail .swiper-slide {
+    width: 25%;
+    height: 100%;
+    opacity: 0.4;
+  }
+
+  .myswiper-thumbnail .swiper-slide-thumb-active {
+    opacity: 1;
+  }
+
+  /* Thumbnail Swiper: miniature quadrate, croppate e zoomate */
+.myswiper-thumbnail .swiper-slide {
+  width: 100px !important;   /* puoi regolare la dimensione */
+  height: 100px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 12px;
+  background: #222; /* opzionale: sfondo per immagini trasparenti */
+}
+
+.myswiper-thumbnail .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;   /* croppa e riempie il box */
+  object-position: center;
+  border-radius: 8px;
+  display: block;
+}
+
+/* Slider principale: immagini sempre piene e centrate */
+.myswiper-main .swiper-slide {
+  width: 100%;
+  height: 500px; /* scegli l'altezza che preferisci, es: 400px, 500px, ecc. */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: #222; /* opzionale: sfondo per immagini trasparenti */
+  border-radius: 16px;
+}
+
+.myswiper-main .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;    /* Croppa e riempie il box */
+  object-position: center;
+  border-radius: 16px;
+  display: block;
+}
+
+/* Pulsanti Swiper: bianchi con ombra nera */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #fff !important;
+  filter: drop-shadow(0 2px 6px #000a);
+  text-shadow: 0 2px 8px #000a;
+  /* Se usi SVG o immagini come icone, puoi aggiungere anche: */
+  /* background: rgba(0,0,0,0.2); */
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  color: #fff !important;
+  text-shadow: 0 2px 8px #000a;
 }
 
 /* Icon 
