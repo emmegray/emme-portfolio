@@ -611,47 +611,45 @@ button {
 
   /* Thumbnail Swiper: miniature quadrate, croppate e zoomate */
 .myswiper-thumbnail .swiper-slide {
-  width: 100px !important;   /* puoi regolare la dimensione */
+  width: 100px !important;
   height: 100px !important;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
   border-radius: 12px;
-  background: #222; /* opzionale: sfondo per immagini trasparenti */
 }
 
 .myswiper-thumbnail .swiper-slide img {
   width: 100%;
   height: 100%;
-  object-fit: cover;   /* croppa e riempie il box */
+  object-fit: cover;
   object-position: center;
   border-radius: 8px;
   display: block;
 }
 
-/* Slider principale: immagini sempre piene e centrate */
+/* Slider principale Thumbnail: immagini sempre piene e centrate */
 .myswiper-main .swiper-slide {
   width: 100%;
-  height: 500px; /* scegli l'altezza che preferisci, es: 400px, 500px, ecc. */
+  height: 500px; /* Altezza fissa, puoi regolare a piacere */
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  background: #222; /* opzionale: sfondo per immagini trasparenti */
   border-radius: 16px;
 }
 
 .myswiper-main .swiper-slide img {
   width: 100%;
   height: 100%;
-  object-fit: cover;    /* Croppa e riempie il box */
+  object-fit: contain;   /* Così l'immagine si adatta senza essere tagliata */
   object-position: center;
   border-radius: 16px;
   display: block;
 }
 
-/* Pulsanti Swiper: bianchi con ombra nera */
+/* Pulsanti Swiper */
 .swiper-button-next,
 .swiper-button-prev {
   color: #fff !important;
@@ -726,3 +724,5 @@ button {
   white-space: nowrap;
   margin-top: -10px; /* Aggiunto margine negativo per spostare il testo più in su */
 }
+
+

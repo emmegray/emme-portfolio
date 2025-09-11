@@ -1,14 +1,15 @@
 ---
-import { Swiper, SwiperWrapper, SwiperSlide, SwiperButtonPrev, SwiperButtonNext } from "astro-swiper";
-import { data } from "../content/data";
 
-const images = data.Works.Arts.map(item => item.src)
+import { Swiper, SwiperWrapper, SwiperSlide, SwiperButtonPrev, SwiperButtonNext } from "astro-swiper";
+
+const { images = [] } = Astro.props;
+const thumbnails = images.map(item => item.thumbnail ?? item.src);
 ---
 
 <Swiper
   uniqueClass="myswiper-main"
   linkToThumbUniqueClass="myswiper-thumbnail"
-  options={{    // check options at https://swiperjs.com/swiper-api
+  options={{
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
@@ -22,22 +23,20 @@ const images = data.Works.Arts.map(item => item.src)
   }}>
   <SwiperWrapper>
     {
-      images.map(image => (
+      images.map((image, idx) => (
         <SwiperSlide>
-          <img src={image} alt="" />
+          <img src={image.src ?? image} alt={image.alt ?? ""} loading="lazy"/>
         </SwiperSlide>
       ))
     }
   </SwiperWrapper>
-
   <SwiperButtonPrev />
   <SwiperButtonNext />
 </Swiper>
 
-
 <Swiper
   uniqueClass="myswiper-thumbnail"
-  options={{    // check options at https://swiperjs.com/swiper-api
+  options={{
     spaceBetween: 10,
     slidesPerView: 4,
     freeMode: true,
@@ -46,9 +45,9 @@ const images = data.Works.Arts.map(item => item.src)
   }}>
   <SwiperWrapper>
     {
-      images.map(image => (
+      thumbnails.map((thumb, idx) => (
         <SwiperSlide>
-          <img src={image} alt="" />
+          <img src={thumb} alt="" loading="lazy"/>
         </SwiperSlide>
       ))
     }

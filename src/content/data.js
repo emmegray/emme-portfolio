@@ -151,106 +151,132 @@ export const data = {
       {
         alt: "Moonlight, fan art of John Martson from Red Dead Redemption for lights practice",
         src: "/arts/moonlight.png",
+        thumbnail:"/arts/thumbnail/moonlight.png",
       },
       {
         alt: "Fan art of Ash Williams from the movie Army of Darkness",
         src: "/arts/ash.png",
+        thumbnail:"/arts/thumbnail/ash.png",
       },
       {
         alt: "Love over everything",
         src: "/arts/ff7.png",
+        thumbnail:"/arts/thumbnail/ff7.png",
       },
       {
         alt: "Commission Xhenarjo",
         src: "/arts/xhenarjo.png",
+        thumbnail:"/arts/thumbnail/xhenarjo.png",
       },
       {
         alt: "Happy 11 anniversary RDR!",
         src: "/arts/rdr-anniversary.png",
+        thumbnail:"/arts/thumbnail/rdr-anniversary.png",
       },
       {
         alt: "Lonely Wizard",
         src: "/arts/inscryption.png",
+        thumbnail:"/arts/thumbnail/inscryption.png",
       },
       {
         alt: "Hannya man",
         src: "/arts/hannya.png",
+        thumbnail:"/arts/thumbnail/hannya.png",
       },
       {
         alt: "Chill",
         src: "/arts/rdr-chill.png",
+        thumbnail:"/arts/thumbnail/rdr-chill.png",
       },
       {
         alt: "Ieiri Leo stempunk",
         src: "/arts/steampunk.png",
+        thumbnail:"/arts/thumbnail/steampunk.png",
       },
       {
         alt: "Thomas",
         src: "/arts/thomas.png",
+        thumbnail:"/arts/thumbnail/thomas.png",
       },
       {
         alt: "Shiraishi doodle",
         src: "/arts/shiraishi.png",
+        thumbnail:"/arts/thumbnail/shiraishi.png",
       },
       {
         alt: "Golden Kamuy onsen",
         src: "/arts/onsen.png",
+        thumbnail:"/arts/thumbnail/onsen.png",
       },
       {
         alt: "Knot",
         src: "/arts/knot.png",
+        thumbnail:"/arts/thumbnail/knot.png",
       },
       {
         alt: "Flame",
         src: "/arts/flame.png",
+        thumbnail:"/arts/thumbnail/flame.png",
       },
       {
         alt: "Commissioned logo Marco",
         src: "/arts/marco.png",
+        thumbnail:"/arts/thumbnail/marco.png",
       },
       {
         alt: "Request Twitch - Dancers",
         src: "/arts/lucho-request.png",
+        thumbnail:"/arts/thumbnail/lucho-request.png",
       },
       {
         alt: "Raiden",
         src: "/arts/raiden.png",
+        thumbnail:"/arts/thumbnail/raiden.png",
       },
       {
         alt: "Commissioned logo for Roberto",
         src: "/arts/roberto.png",
+        thumbnail:"/arts/thumbnail/roberto.png",
       },
       {
         alt: "Sposa",
         src: "/arts/sposa.png",
+        thumbnail:"/arts/thumbnail/sposa.png",
       },
       {
         alt: "Visual novel experiment",
         src: "/arts/visual-novel-test.gif",
+        thumbnail:"/arts/thumbnail/visual-novel-test.gif",
       },
       {
         alt: "Zhao",
         src: "/arts/zhao.png",
+        thumbnail:"/arts/thumbnail/zhao.png",
       },
       {
         alt: "Twitch animation commission for NeoGianfo",
         src: "/arts/gianfo.gif",
+        thumbnail:"/arts/thumbnail/gianfo.gif",
       },
       {
         alt: "DARQ",
         src: "/arts/darq.png",
+        thumbnail:"/arts/thumbnail/darq.png",
       },
       {
         alt: "Inktober 2017",
         src: "/arts/inktober-11.png",
+        thumbnail:"/arts/thumbnail/inktober-11.png",
       },
       {
         alt: "Take care",
         src: "/arts/trevor.png",
+        thumbnail:"/arts/thumbnail/trevor.png",
       },
       {
         alt: "Twitch animation for Lucho",
         src: "/arts/lucho-gnam.gif",
+        thumbnail:"/arts/thumbnail/lucho-gnam.gif",
       },
     ],
     Emote: [

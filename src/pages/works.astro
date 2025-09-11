@@ -7,6 +7,7 @@ const allProjects = await getCollection("projects");
 const pageTitle = "Works";
 import { data } from "../content/data"
 import Thumbnail from "../components/Thumbnail.astro";
+---
 
 const artsEntries = await getCollection("arts")
 
@@ -29,22 +30,23 @@ const artsEntries = await getCollection("arts")
   <div class="shadow"></div>
   <div class="text"><h2>Arts projects:</h2></div></div>
 
-    <Thumbnail />
+    <Thumbnail images={data.Works.Arts} />
     
     <div class="h-divider">
   <div class="shadow"></div>
   <div class="text"><h2>Design & Graphics:</h2></div></div>
-      
-    <Gallery images={data.Works.Emote} page="emotes" client:load/>
+  
+  <!-- <Thumbnail images={data.Works.Emote} /> -->
+  <Gallery images={data.Works.Emote} />
 
-    <div id="emme-show" class="white-line shake-horizontal" style="padding-bottom: 0;">
+    <div id="emme-show" class="white-line" style="padding-bottom: 0;">
       <img
         src="/material/Emme che fa vedere cose.png"
         alt="Emme che mostra cose"
         width="340"
         loading="lazy"
-        class="shake-horizontal"
       />
     </div>
+
 </Layout>
 
