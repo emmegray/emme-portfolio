@@ -1,9 +1,8 @@
 ---
-
 import { Swiper, SwiperWrapper, SwiperSlide, SwiperButtonPrev, SwiperButtonNext } from "astro-swiper";
 
 const { images = [] } = Astro.props;
-const thumbnails = images.map(item => item.thumbnail ?? item.src);
+const thumbnails = images.map((item) => item.thumbnail ?? item.src);
 ---
 
 <Swiper
@@ -20,12 +19,13 @@ const thumbnails = images.map(item => item.thumbnail ?? item.src);
       disableOnInteraction: false,
       waitForTransition: false,
     },
-  }}>
+  }}
+>
   <SwiperWrapper>
     {
       images.map((image, idx) => (
         <SwiperSlide>
-          <img src={image.src ?? image} alt={image.alt ?? ""} loading="lazy"/>
+          <img src={image.src ?? image} alt={image.alt ?? ""} loading="lazy" />
         </SwiperSlide>
       ))
     }
@@ -42,12 +42,13 @@ const thumbnails = images.map(item => item.thumbnail ?? item.src);
     freeMode: true,
     watchSlidesProgress: true,
     loop: true,
-  }}>
+  }}
+>
   <SwiperWrapper>
     {
       thumbnails.map((thumb, idx) => (
         <SwiperSlide>
-          <img src={thumb} alt="" loading="lazy"/>
+          <img src={thumb} alt="" loading="lazy" />
         </SwiperSlide>
       ))
     }

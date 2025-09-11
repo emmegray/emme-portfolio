@@ -35,7 +35,7 @@ const artsEntries = await getCollection("arts")
   <div class="shadow"></div>
   <div class="text"><h2>Design & Graphics:</h2></div></div>
   
-   <Gallery images={data.Works.Emote.map(img => ({ ...img, thumbnail: img.thumbnail ?? img.src }))} page="emotes" client:load/>
+  <Gallery images={data.Works.Emote.map(img => ({ ...img, thumbnail: img.thumbnail ?? img.src }))} page="emotes" client:load/>
 
     <div id="emme-show" class="white-line" style="padding-bottom: 0;">
       <img

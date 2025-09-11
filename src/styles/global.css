@@ -577,12 +577,12 @@ button {
   cursor: zoom-in;
 }
 
-img {
+/* img {
   width: 100%;
   position: relative;
   display: grid;
   overflow: hidden;
-}
+} */
 
 .swiper-wrapper {
   display: flex;

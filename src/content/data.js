@@ -4,59 +4,39 @@ export const data = {
       { name: "Home", link: "/" },
       { name: "About", link: "/about" },
       { name: "Works", link: "/works" },
-     // { name: "Posts", link: "/posts" },
-    // { name: "Contact", link: "/contact" },
+      // { name: "Posts", link: "/posts" },
+      // { name: "Contact", link: "/contact" },
     ],
   },
 
   About: {
-    Intro:
-      "Always been passionate about the world of art and technology, already at the age of 13 I began to self-teach the basics of digital and traditional design. I'm also a great lover of video games, comics and cinema, I especially love the horror genre and everything that has a exciting plot!",
+    Intro: "Always been passionate about the world of art and technology, already at the age of 13 I began to self-teach the basics of digital and traditional design. I'm also a great lover of video games, comics and cinema, I especially love the horror genre and everything that has a exciting plot!",
     Experiences: [
       {
         company: "Class Editori",
         title: "Junior Web Designer",
         subtitle: "Class Editori S.p.A. - July 2023",
-        skills: [
-          "website development and maintenance using C#,",
-          "frontend development and web marketing campaign design,",
-          "creation and development of Email Marketing (DEM) and landing page,",
-          "management and optimization of tags, funnels and SEO optimization of digital properties."
-        ],
+        skills: ["website development and maintenance using C#,", "frontend development and web marketing campaign design,", "creation and development of Email Marketing (DEM) and landing page,", "management and optimization of tags, funnels and SEO optimization of digital properties."],
       },
       {
         company: "Entiende",
         title: "Web Developer",
         subtitle: "Entiende S.r.l. - December 2022 - July 2023",
-        skills: [
-          "landing pages made in React and using TypeScript,",
-          "management of the CRM (release and server) created with Angular, MongoDB and Sequelize,",
-          "building APIs and microservices with NestJS,",
-          "creation of wikis and documentation for the team with in-depth explanations on topics such as SEO and Google suites."
-        ],
+        skills: ["landing pages made in React and using TypeScript,", "management of the CRM (release and server) created with Angular, MongoDB and Sequelize,", "building APIs and microservices with NestJS,", "creation of wikis and documentation for the team with in-depth explanations on topics such as SEO and Google suites."],
       },
       {
         company: "Boolean Careers",
         title: "Junior Full Stack Web Developer Trainee",
         subtitle: "Boolean Careers - February - September 2022",
         description: `Full Stack Development course where I learned to:`,
-        skills: [
-          "created layout using semantic HTML5, CSS3 and Bootstrap replicating web pages,",
-          "wrote small interfaces with Vue.js and vanilla JavaScript,",
-          "created PHP/Laravel applications and SQL scripts,",
-          "carried out final project (webapp inspired by Airbnb) in team managing everything via Git taking care of the development of the front-end part with Vue.js"
-        ],
+        skills: ["created layout using semantic HTML5, CSS3 and Bootstrap replicating web pages,", "wrote small interfaces with Vue.js and vanilla JavaScript,", "created PHP/Laravel applications and SQL scripts,", "carried out final project (webapp inspired by Airbnb) in team managing everything via Git taking care of the development of the front-end part with Vue.js"],
       },
       {
         company: "Twitch",
         title: "Twitch Streamer Affiliate",
         subtitle: "Twitch - December 2017",
         description: ``,
-        skills: [
-          "made contents of illustration, cosplay, DIY, talk and gameplay,",
-          "work on the graphics, video and audio editing, managed moderation, communication on social media and community building,",
-          "helped me to develop my public speaking, stress management and public relations skills"
-        ],
+        skills: ["made contents of illustration, cosplay, DIY, talk and gameplay,", "work on the graphics, video and audio editing, managed moderation, communication on social media and community building,", "helped me to develop my public speaking, stress management and public relations skills"],
       },
       {
         company: "Ridble",
@@ -83,67 +63,67 @@ export const data = {
         nickname: "manuelaienuso@gmail.com",
         link: "mailto:manuelaienuso@gmail.com",
         icon: "fa-solid fa-envelope",
-        style:"#FFFFFF"
+        style: "#FFFFFF",
       },
       {
         name: "GitHub",
         nickname: "@emmegray",
         link: "https://github.com/emmegray",
         icon: "fa-brands fa-github",
-        style:"#FFFFFF"
+        style: "#FFFFFF",
       },
       {
         name: "LinkedIn",
         nickname: "",
         link: "https://www.linkedin.com/in/manuela-ienuso-a44190111/",
         icon: "fa-brands fa-linkedin",
-        style:"#FFFFFF"
+        style: "#FFFFFF",
       },
       {
         name: "Twitch",
         nickname: "@emmegray",
         link: "https://www.twitch.tv/emmegray",
         icon: "fa-brands fa-twitch",
-        style:"#FFFFFF"
+        style: "#FFFFFF",
       },
       {
         name: "YouTube",
         nickname: "@EmmeGray",
         link: "https://www.youtube.com/@EmmeGray",
         icon: "fa-brands fa-youtube",
-        style:"#FFFFFF"
+        style: "#FFFFFF",
       },
       {
         name: "Instagram",
         nickname: "@emme_gray",
         link: "https://www.instagram.com/emme_gray",
         icon: "fa-brands fa-instagram",
-        style:"#FFFFFF"
+        style: "#FFFFFF",
       },
       {
         name: "DeviantArt",
         nickname: "@emme-gray",
         link: "https://www.deviantart.com/emme-gray",
         icon: "fa-brands fa-deviantart",
-        style:"#FFFFFF"
+        style: "#FFFFFF",
       },
       {
         name: "BlueSky",
         nickname: "@emme-gray.bsky.social",
         link: "https://bsky.app/profile/emme-gray.bsky.social",
         icon: "fa-brands fa-bluesky",
-        style:"#FFFFFF"
+        style: "#FFFFFF",
       },
       {
         name: "Cara",
         nickname: "@emmegray",
         link: "https://cara.app/emmegray",
         icon: "fa-solid fa-c",
-        style:"#FFFFFF"
+        style: "#FFFFFF",
       },
-    ]
+    ],
   },
-  
+
   Works: {
     TitleArts: "Drawing commissions:",
     TitleEmote: "Emote commissions:",
@@ -151,207 +131,205 @@ export const data = {
       {
         alt: "Moonlight, fan art of John Martson from Red Dead Redemption for lights practice",
         src: "/arts/moonlight.png",
-        thumbnail:"/arts/thumbnail/moonlight.png",
+        thumbnail: "/arts/thumbnail/moonlight.png",
       },
       {
         alt: "Fan art of Ash Williams from the movie Army of Darkness",
         src: "/arts/ash.png",
-        thumbnail:"/arts/thumbnail/ash.png",
+        thumbnail: "/arts/thumbnail/ash.png",
       },
       {
         alt: "Love over everything",
         src: "/arts/ff7.png",
-        thumbnail:"/arts/thumbnail/ff7.png",
+        thumbnail: "/arts/thumbnail/ff7.png",
       },
       {
         alt: "Commission Xhenarjo",
         src: "/arts/xhenarjo.png",
-        thumbnail:"/arts/thumbnail/xhenarjo.png",
+        thumbnail: "/arts/thumbnail/xhenarjo.png",
       },
       {
         alt: "Happy 11 anniversary RDR!",
         src: "/arts/rdr-anniversary.png",
-        thumbnail:"/arts/thumbnail/rdr-anniversary.png",
+        thumbnail: "/arts/thumbnail/rdr-anniversary.png",
       },
       {
         alt: "Lonely Wizard",
         src: "/arts/inscryption.png",
-        thumbnail:"/arts/thumbnail/inscryption.png",
+        thumbnail: "/arts/thumbnail/inscryption.png",
       },
       {
         alt: "Hannya man",
         src: "/arts/hannya.png",
-        thumbnail:"/arts/thumbnail/hannya.png",
+        thumbnail: "/arts/thumbnail/hannya.png",
       },
       {
         alt: "Chill",
         src: "/arts/rdr-chill.png",
-        thumbnail:"/arts/thumbnail/rdr-chill.png",
+        thumbnail: "/arts/thumbnail/rdr-chill.png",
       },
       {
         alt: "Ieiri Leo stempunk",
         src: "/arts/steampunk.png",
-        thumbnail:"/arts/thumbnail/steampunk.png",
+        thumbnail: "/arts/thumbnail/steampunk.png",
       },
       {
         alt: "Thomas",
         src: "/arts/thomas.png",
-        thumbnail:"/arts/thumbnail/thomas.png",
+        thumbnail: "/arts/thumbnail/thomas.png",
       },
       {
         alt: "Shiraishi doodle",
         src: "/arts/shiraishi.png",
-        thumbnail:"/arts/thumbnail/shiraishi.png",
+        thumbnail: "/arts/thumbnail/shiraishi.png",
       },
       {
         alt: "Golden Kamuy onsen",
         src: "/arts/onsen.png",
-        thumbnail:"/arts/thumbnail/onsen.png",
+        thumbnail: "/arts/thumbnail/onsen.png",
       },
       {
         alt: "Knot",
         src: "/arts/knot.png",
-        thumbnail:"/arts/thumbnail/knot.png",
+        thumbnail: "/arts/thumbnail/knot.png",
       },
       {
         alt: "Flame",
         src: "/arts/flame.png",
-        thumbnail:"/arts/thumbnail/flame.png",
+        thumbnail: "/arts/thumbnail/flame.png",
       },
       {
         alt: "Commissioned logo Marco",
         src: "/arts/marco.png",
-        thumbnail:"/arts/thumbnail/marco.png",
+        thumbnail: "/arts/thumbnail/marco.png",
       },
       {
         alt: "Request Twitch - Dancers",
         src: "/arts/lucho-request.png",
-        thumbnail:"/arts/thumbnail/lucho-request.png",
+        thumbnail: "/arts/thumbnail/lucho-request.png",
       },
       {
         alt: "Raiden",
         src: "/arts/raiden.png",
-        thumbnail:"/arts/thumbnail/raiden.png",
+        thumbnail: "/arts/thumbnail/raiden.png",
       },
       {
         alt: "Commissioned logo for Roberto",
         src: "/arts/roberto.png",
-        thumbnail:"/arts/thumbnail/roberto.png",
+        thumbnail: "/arts/thumbnail/roberto.png",
       },
       {
         alt: "Sposa",
         src: "/arts/sposa.png",
-        thumbnail:"/arts/thumbnail/sposa.png",
+        thumbnail: "/arts/thumbnail/sposa.png",
       },
       {
         alt: "Visual novel experiment",
         src: "/arts/visual-novel-test.gif",
-        thumbnail:"/arts/thumbnail/visual-novel-test.gif",
+        thumbnail: "/arts/thumbnail/visual-novel-test.gif",
       },
       {
         alt: "Zhao",
         src: "/arts/zhao.png",
-        thumbnail:"/arts/thumbnail/zhao.png",
+        thumbnail: "/arts/thumbnail/zhao.png",
       },
       {
         alt: "Twitch animation commission for NeoGianfo",
         src: "/arts/gianfo.gif",
-        thumbnail:"/arts/thumbnail/gianfo.gif",
+        thumbnail: "/arts/thumbnail/gianfo.gif",
       },
       {
         alt: "DARQ",
         src: "/arts/darq.png",
-        thumbnail:"/arts/thumbnail/darq.png",
+        thumbnail: "/arts/thumbnail/darq.png",
       },
       {
         alt: "Inktober 2017",
         src: "/arts/inktober-11.png",
-        thumbnail:"/arts/thumbnail/inktober-11.png",
+        thumbnail: "/arts/thumbnail/inktober-11.png",
       },
       {
         alt: "Take care",
         src: "/arts/trevor.png",
-        thumbnail:"/arts/thumbnail/trevor.png",
+        thumbnail: "/arts/thumbnail/trevor.png",
       },
       {
         alt: "Twitch animation for Lucho",
         src: "/arts/lucho-gnam.gif",
-        thumbnail:"/arts/thumbnail/lucho-gnam.gif",
+        thumbnail: "/arts/thumbnail/lucho-gnam.gif",
       },
     ],
     Emote: [
       {
         alt: "Twitch emote commission Lucho set 1",
         src: "/emote/Twitch commission - Lucho emote showcase 1.png",
-        slug:"lucho"
+        slug: "lucho",
       },
       {
         alt: "Twitch emote commission Lucho set 2",
         src: "/emote/Twitch commission - Lucho emote showcase 2.png",
-        slug:"lucho"
+        slug: "lucho",
       },
       {
         alt: "Twitch emote commission Lucho set 3",
         src: "/emote/Twitch commission - Lucho emote showcase 3.gif",
-        slug:"lucho"
+        slug: "lucho",
       },
       {
         alt: "Twitch emote commission Lucho set 4",
         src: "/emote/Twitch commission - Lucho emote showcase 4.png",
-        slug:"lucho"
+        slug: "lucho",
       },
       {
         alt: "Twitch emote commission MetalZarko set 2",
         src: "/emote/Twitch commission - MetalZarko emote showcase 2.png",
-        slug:"zarko"
+        slug: "zarko",
       },
       {
         alt: "Twitch emote commission MetalZarko set 1",
         src: "/emote/Twitch commission - MetalZarko emote showcase.png",
-        slug:"zarko"
+        slug: "zarko",
       },
       {
         alt: "Twitch emote commission Prongedleaf",
         src: "/emote/Twitch commission - Prongedleaf emote showcase.png",
-        slug:"leaf"
+        slug: "leaf",
       },
       {
         alt: "Twitch emote commission Saetta set 1",
         src: "/emote/Twitch commission - Saetta badges showcase 1.gif",
-        slug:"saetta"
+        slug: "saetta",
       },
       {
         alt: "Twitch badge commission Saetta",
         src: "/emote/Twitch commission - Saetta badges showcase.png",
-        slug:"saetta"
+        slug: "saetta",
       },
       {
         alt: "Twitch badge commission Stormy",
         src: "/emote/Twitch commission - showcase Stormy.png",
-        slug:"stormy"
+        slug: "stormy",
       },
       {
         alt: "Twitch emote commission Elly",
         src: "/emote/Twitch commission showcase 2.png",
-        slug:"elly"
+        slug: "elly",
       },
       {
         alt: "Twitch emote commission Elly",
         src: "/emote/Twitch commission showcase.gif",
-        slug:"elly"
+        slug: "elly",
       },
       {
         alt: "Twitch emote commission Crash",
         src: "/emote/twitch_emote_commission___crashthetwitch_nier_2.gif",
-        slug:"crash"
+        slug: "crash",
       },
       {
         alt: "Twitch emote commission Crash",
         src: "/emote/twitch_emote_commission___crashthetwitch_nier_set_1.png",
-        slug:"crash"
+        slug: "crash",
       },
-    ]
+    ],
   },
 };
-
-

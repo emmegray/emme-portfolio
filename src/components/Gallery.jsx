@@ -18,12 +18,12 @@ export const Gallery = ({ images = data.Works.Arts, page = "arts" }) => {
           <img src="/material/dietro.png" alt="Indietro" />
         </button>
 
-            <AnimatePresence initial={false}>
+        <AnimatePresence initial={false}>
           <motion.a key={slide} initial={{ opacity: 0 }} animate={{ opacity: 1, zIndex: 1 }} exit={{ opacity: 0, zIndex: 0 }} transition={{ duration: 1 }} href={image?.slug ? "/" + page + "/" + image.slug : undefined} onClick={() => !image.slug && setOpen(true)}>
             <motion.img src={image?.thumbnail ?? image?.src ?? ""} />
           </motion.a>
         </AnimatePresence>
-        
+
         <button className="gallery-nav-btn next" onClick={forward} aria-label="Immagine successiva" type="button">
           <img src="/material/avanti.png" alt="Avanti" />
         </button>
