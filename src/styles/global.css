@@ -777,6 +777,7 @@ button {
 /* Copy code to element you want to animate */
 #emme-show img {
   animation: wobble-animation 2s ease 0s infinite alternate none;
+  padding-top: 40px;
 }
 
 @keyframes wobble-animation {
