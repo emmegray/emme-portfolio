@@ -6,7 +6,8 @@ import {Gallery} from '../components/Gallery';
 const allProjects = await getCollection("projects");
 const pageTitle = "Works";
 import { data } from "../content/data"
-import Thumbnail from "../components/Thumbnail.astro";
+import SwiperArt from "../components/Swiper-Art.astro";
+import SwiperGraphic from "../components/Swiper-Graphic.astro";
 
 const artsEntries = await getCollection("arts")
 
@@ -29,13 +30,14 @@ const artsEntries = await getCollection("arts")
   <div class="shadow"></div>
   <div class="text"><h2>Arts projects:</h2></div></div>
 
-    <Thumbnail images={data.Works.Arts} />
+    <SwiperArt/>
     
+    <br>
     <div class="h-divider">
   <div class="shadow"></div>
   <div class="text"><h2>Design & Graphics:</h2></div></div>
   
-  <Gallery images={data.Works.Emote.map(img => ({ ...img, thumbnail: img.thumbnail ?? img.src }))} page="emotes" client:load/>
+    <SwiperGraphic/>
 
     <div id="emme-show" class="white-line" style="padding-bottom: 0;">
       <img

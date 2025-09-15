@@ -1,14 +1,15 @@
 ---
 import { Swiper, SwiperWrapper, SwiperSlide, SwiperButtonPrev, SwiperButtonNext } from "astro-swiper";
+import { data } from "../content/data"
 
-const { images = [] } = Astro.props;
-const thumbnails = images.map((item) => item.thumbnail ?? item.src);
+const images = data.Works.Arts;
+const thumbnails = data.Works.Arts.map((item) => item.thumbnail ?? item.src);
 
 ---
 
 <Swiper
-  uniqueClass="myswiper-main"
-  linkToThumbUniqueClass="myswiper-thumbnail"
+  uniqueClass="swiper-art"
+  linkToThumbUniqueClass="swiper-art-thumbnail"
   options={{
     zoom: true,
     navigation: {
@@ -32,7 +33,7 @@ const thumbnails = images.map((item) => item.thumbnail ?? item.src);
       images.map((image, idx) => (
         <SwiperSlide>
           <div class="swiper-zoom-container">
-          <img src={image.src ?? image} alt={image.alt ?? ""} loading="lazy" />
+          <img src={image.src} alt={image.alt} loading="lazy" />
           </div>
         </SwiperSlide>
       ))
@@ -43,7 +44,7 @@ const thumbnails = images.map((item) => item.thumbnail ?? item.src);
 </Swiper>
 
 <Swiper
-  uniqueClass="myswiper-thumbnail"
+  uniqueClass="swiper-art-thumbnail"
   options={{
     spaceBetween: 10,
     slidesPerView: 4,

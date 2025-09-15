@@ -1,0 +1,66 @@
+---
+import { Swiper, SwiperWrapper, SwiperSlide, SwiperButtonPrev, SwiperButtonNext } from "astro-swiper";
+import { data } from "../content/data"
+
+const images = data.Works.Emote;
+const thumbnails = data.Works.Emote.map((item) => item.thumbnail ?? item.src);
+
+---
+
+<Swiper
+  uniqueClass="swiper-graphic"
+  linkToThumbUniqueClass="swiper-graphic-thumbnail"
+  options={{
+    zoom: true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    loop: true,
+    autoplay: {
+      delay: 10000,
+      disableOnInteraction: false,
+      waitForTransition: false,
+    },
+  }}
+>
+  <SwiperWrapper>
+    {
+      images.map((image, idx) => (
+        <SwiperSlide>
+          <div class="swiper-zoom-container">
+          <img src={image.src ?? image} alt={image.alt ?? ""} loading="lazy" />
+          </div>
+        </SwiperSlide>
+      ))
+    }
+  </SwiperWrapper>
+  <SwiperButtonPrev />
+  <SwiperButtonNext />
+</Swiper>
+
+<Swiper
+  uniqueClass="swiper-graphic-thumbnail"
+  options={{
+    spaceBetween: 10,
+    slidesPerView: 4,
+    freeMode: true,
+    watchSlidesProgress: true,
+    loop: true,
+  }}
+>
+  <SwiperWrapper>
+    {
+      thumbnails.map((thumb, idx) => (
+        <SwiperSlide>
+          <img src={thumb} alt="" loading="lazy" />
+        </SwiperSlide>
+      ))
+    }
+  </SwiperWrapper>
+</Swiper>
+
