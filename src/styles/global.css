@@ -651,6 +651,12 @@ button {
   display: block;
 }
 
+@media only screen and (max-width: 600px) {
+  .swiper-art .swiper-slide {
+    height: 260px;
+  }
+}
+
 /* Swiper thumbnail GRAPHIC */
 .swiper-graphic-thumbnail {
   margin-top: 16px;
@@ -681,6 +687,12 @@ button {
   border-radius: 8px;
   display: block;
   box-shadow: 0 2px 8px #0008;
+}
+
+@media only screen and (max-width: 600px) {
+  .swiper-graphic .swiper-slide {
+    height: 260px;
+  }
 }
 
 /* Pulsanti Swiper (valgono per tutti) */
