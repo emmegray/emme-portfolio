@@ -582,6 +582,7 @@ button {
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  cursor:zoom-in
 }
 
 .swiper-art .swiper-slide img {
@@ -611,6 +612,7 @@ button {
   margin-right: 8px;
   opacity: 0.4;
   transition: opacity 0.2s;
+  cursor: pointer;
 }
 
 .swiper-art-thumbnail .swiper-slide-thumb-active {
@@ -625,7 +627,38 @@ button {
   border-radius: 8px;
   display: block;
   box-shadow: 0 2px 8px #0008;
+  border-radius: 13px;
 }
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+}
+
+.swiper-art:hover .overlay {
+  opacity: 1;
+}
+
+/* .text-zoom {
+  color: white;
+  font-size: 2rem;
+  font-family: var(--header)  ;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  text-shadow: 0 0 5px #000000, 0 0 10px #000000, 0 0 20px #000000, 0 0 40px #000000;
+} */
 
 /* Swiper principale GRAPHIC */
 .swiper-graphic {
@@ -641,6 +674,7 @@ button {
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  cursor:zoom-in
 }
 
 .swiper-graphic .swiper-slide img {
@@ -673,6 +707,7 @@ button {
   margin-right: 8px;
   opacity: 0.4;
   transition: opacity 0.2s;
+  cursor: pointer;
 }
 
 .swiper-graphic-thumbnail .swiper-slide-thumb-active {
