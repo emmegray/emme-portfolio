@@ -29,14 +29,14 @@ const thumbnails = data.Works.Emote.map((item) => item.thumbnail ?? item.src);
   }}
 >
   <SwiperWrapper>
-    {
-      images.map((image, idx) => (
-        <SwiperSlide>
-          <div class="swiper-zoom-container">
-          <img src={image.src ?? image} alt={image.alt ?? ""} loading="lazy" />
-          </div>
-        </SwiperSlide>
-      ))
+      {
+        images.map((image, idx) => (
+          <SwiperSlide>
+            <div class="swiper-zoom-container">
+            <img src={image.src ?? image} alt={image.alt ?? ""} loading="lazy" />
+            </div>
+          </SwiperSlide>
+        ))
     }
   </SwiperWrapper>
   <SwiperButtonPrev />

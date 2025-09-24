@@ -22,6 +22,7 @@
     "astro": "^5.1.7",
     "astro-bootstrap": "^0.7.0",
     "astro-swiper": "^1.1.0",
+    "astro-tooltips": "^0.6.2",
     "bootstrap": "^5.3.3",
     "motion": "^11.11.17",
     "react": "^18.3.1",

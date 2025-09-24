@@ -4,6 +4,8 @@ import Footer from '../components/Footer.astro';
 import '../styles/global.css';
 const { pageTitle } = Astro.props;
 import { data } from "../content/data"
+import { Tooltips } from 'astro-tooltips';
+
 ---
 <!DOCTYPE html>
 <html transition:animate="none" lang="en">
@@ -22,6 +24,8 @@ import { data } from "../content/data"
         <script src="https://kit.fontawesome.com/9e48a2a952.js" crossorigin="anonymous"></script>
         <meta name="generator" content={Astro.generator} />
         <title>{pageTitle}</title>
+
+        <Tooltips interactive={false} delay={[15, 14000]} />
 	</head>
 	<body>
         <Header />

@@ -582,7 +582,8 @@ button {
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  cursor:zoom-in
+  cursor:zoom-in;
+  border-radius: 16px;
 }
 
 .swiper-art .swiper-slide img {
@@ -593,6 +594,10 @@ button {
   border-radius: 16px;
   display: block;
   box-shadow: 0 4px 32px #000a;
+}
+
+.swiper-art .swiper-zoom-container img {
+border-radius: 16px;
 }
 
 /* Swiper thumbnail ART */
@@ -645,20 +650,6 @@ button {
 .swiper-art:hover .overlay {
   opacity: 1;
 }
-
-/* .text-zoom {
-  color: white;
-  font-size: 2rem;
-  font-family: var(--header)  ;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-  text-shadow: 0 0 5px #000000, 0 0 10px #000000, 0 0 20px #000000, 0 0 40px #000000;
-} */
 
 /* Swiper principale GRAPHIC */
 .swiper-graphic {
@@ -881,7 +872,6 @@ button {
   display: block;
 }
 
-/* Copy code to element you want to animate */
 #emme-show img {
   animation: wobble-animation 2s ease 0s infinite alternate none;
   padding-top: 40px;
@@ -933,3 +923,8 @@ button {
     transform: translateX(0px);
   }
 }
+
+.animated-cursor {
+  cursor: url('https://img.icons8.com/?size=50&id=bE2OWeK0Vr6T&format=png&color=FFFFFF') 10 1, auto ;
+}
+

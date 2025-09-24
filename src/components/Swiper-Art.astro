@@ -32,11 +32,7 @@ const thumbnails = data.Works.Arts.map((item) => item.thumbnail ?? item.src);
     {
       images.map((image, idx) => (
         <SwiperSlide>
-          {/* <div class="overlay">
-            <div class="text-zoom">Double click on me to zoom!</div>
-          </div> */}
-          <div class="swiper-zoom-container">
-          <img src={image.src} alt={image.alt} loading="lazy" />
+          <div class="swiper-zoom-container animated-cursor "><img src={image.src} alt={image.alt} loading="lazy" />
           </div>
         </SwiperSlide>
       ))

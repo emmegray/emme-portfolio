@@ -13,7 +13,6 @@ const artsEntries = await getCollection("arts")
 
 ---
 <Layout pageTitle={pageTitle}>
-
   <div class="h-divider">
   <div class="shadow"></div>
   <div class="text"><h2>Code projects:</h2></div></div>
@@ -28,11 +27,11 @@ const artsEntries = await getCollection("arts")
 
       <div class="h-divider" style="margin-top: 80px;">
   <div class="shadow"></div>
-  <div class="text"><h2>Arts projects:</h2></div></div>
+  <div class="text" id="triggerSection"><h2>Arts projects:</h2></div></div>
 
     <SwiperArt/>
     
-    <br>
+    <br><br>
     <div class="h-divider">
   <div class="shadow"></div>
   <div class="text"><h2>Design & Graphics:</h2></div></div>
@@ -49,3 +48,34 @@ const artsEntries = await getCollection("arts")
     </div>
 
 </Layout>
+
+
+<!-- <script>
+  
+document.addEventListener('DOMContentLoaded', () => {
+  const notice = document.getElementById('scrollNotice');
+  const target = document.getElementById('triggerSection');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        // Mostra l'avviso
+        notice.classList.add('show');
+
+        // Nasconde dopo 4 secondi
+        setTimeout(() => {
+          notice.classList.remove('show');
+        }, 4000);
+
+        // Disattiva l'osservatore dopo la prima attivazione
+        observer.unobserve(target);
+      }
+    });
+  }, {
+    threshold: 0.5 // attiva quando metà della sezione è visibile
+  });
+
+  observer.observe(target);
+});
+
+</script> -->
