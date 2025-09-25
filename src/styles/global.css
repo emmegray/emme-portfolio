@@ -592,8 +592,14 @@ button {
   box-shadow: 0 4px 32px #000a;
 }
 
-.swiper-art .swiper-zoom-container {
-border-radius: 16px;
+.swiper-art .swiper-slide {
+  overflow: hidden !important;
+  border-radius: 16px !important;
+}
+
+/* Forza il border-radius anche sull'immagine */
+.swiper-art .swiper-slide img.imgArt {
+  border-radius: 16px !important;
 }
 
 /* Swiper ART zoom */
