@@ -4,7 +4,6 @@ import { data } from "../content/data"
 
 const images = data.Works.Emote;
 const thumbnails = data.Works.Emote.map((item) => item.thumbnail ?? item.src);
-
 ---
 
 <Swiper
@@ -28,17 +27,27 @@ const thumbnails = data.Works.Emote.map((item) => item.thumbnail ?? item.src);
     },
   }}
 >
-  <SwiperWrapper>
-      {
-        images.map((image, idx) => (
-          <SwiperSlide>
-            <div class="swiper-zoom-container">
-            <img src={image.src ?? image} alt={image.alt ?? ""} loading="lazy" />
-            </div>
-          </SwiperSlide>
-        ))
-    }
-  </SwiperWrapper>
+<SwiperWrapper>
+  {
+    images.map((image, idx) => (
+      <SwiperSlide>
+        <div class="swiper-zoom-container">
+          <img
+            class="imgGraphic"
+            src={image.src ?? image}
+            alt={image.alt ?? ""}
+            loading="lazy"
+            style="cursor:zoom-in;"
+            data-title={image.title ?? ""}
+            data-description={image.description ?? ""}
+            data-year={image.year ?? ""}
+            data-tool={image.tool ?? ""}
+          />
+        </div>
+      </SwiperSlide>
+    ))
+  }
+</SwiperWrapper>
   <SwiperButtonPrev />
   <SwiperButtonNext />
 </Swiper>
@@ -64,3 +73,52 @@ const thumbnails = data.Works.Emote.map((item) => item.thumbnail ?? item.src);
   </SwiperWrapper>
 </Swiper>
 
+<div id="graphicImagePopup" class="image-popup" style="display:none;">
+  <img id="graphicPopupImg" src="" alt="" />
+  <!-- <div class="image-popup-card" id="graphicPopupInfo"></div> -->
+  <button id="graphicPopupClose" type="button">X</button>
+</div>
+
+<script type="text/javascript">
+  function setupGraphicPopup() {
+    const popup = document.getElementById('graphicImagePopup');
+    const popupImg = document.getElementById('graphicPopupImg');
+    // const popupInfo = document.getElementById('graphicPopupInfo');
+    const popupClose = document.getElementById('graphicPopupClose');
+    const swiperGraphic = document.querySelector('.swiper-graphic');
+
+    if (!swiperGraphic) {
+      setTimeout(setupGraphicPopup, 100);
+      return;
+    }
+
+    swiperGraphic.addEventListener('click', function(e) {
+      const img = e.target.closest('.imgGraphic');
+      if (img) {
+        popup.style.display = "flex";
+        popupImg.src = img.src;
+        popupImg.alt = img.alt;
+
+        // Se vuoi mostrare info, decommenta qui
+        // let infoHtml = "<ul>";
+        // if (img.dataset.title) infoHtml += `<li>${img.dataset.title}</li>`;
+        // if (img.dataset.description) infoHtml += `<li>${img.dataset.description}</li>`;
+        // if (img.dataset.year) infoHtml += `<li>${img.dataset.year}</li>`;
+        // if (img.dataset.tool) infoHtml += `<li>${img.dataset.tool}</li>`;
+        // infoHtml += "</ul>";
+        // popupInfo.innerHTML = infoHtml;
+      }
+    });
+
+    popupClose.onclick = function(e) {
+      e.stopPropagation();
+      popup.style.display = "none";
+    };
+
+    popup.onclick = function(e) {
+      if (e.target === popup) popup.style.display = "none";
+    };
+  }
+
+  document.addEventListener("DOMContentLoaded", setupGraphicPopup);
+</script>
