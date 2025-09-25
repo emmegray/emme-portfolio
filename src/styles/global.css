@@ -77,10 +77,6 @@ a {
   color: #fafafa;
 }
 
-img {
-  pointer-events: none;
-}
-
 /* Header */
 
 header {
@@ -596,8 +592,41 @@ button {
   box-shadow: 0 4px 32px #000a;
 }
 
-.swiper-art .swiper-zoom-container img {
+.swiper-art .swiper-zoom-container {
 border-radius: 16px;
+}
+
+/* Swiper ART zoom */
+.image-popup {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #00000075;
+  z-index: 9999; /* assicurati che sia sopra tutto */
+}
+.image-popup > img {
+  border-radius: 32px;
+  max-width: calc(100% - 64px);
+  max-height: calc(100% - 64px);
+}
+.image-popup button {
+  position: fixed;
+  top: 20px;
+  right: 30px;
+  z-index: 10000;
+  padding: 20px;
+  background: none;
+  color: #fff;
+  font-size: 2rem;
+  border: none;
+  cursor: pointer;
 }
 
 /* Swiper thumbnail ART */
@@ -923,8 +952,3 @@ border-radius: 16px;
     transform: translateX(0px);
   }
 }
-
-.animated-cursor {
-  cursor: url('https://img.icons8.com/?size=50&id=bE2OWeK0Vr6T&format=png&color=FFFFFF') 10 1, auto ;
-}
-

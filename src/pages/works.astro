@@ -2,7 +2,7 @@
 import { getCollection } from "astro:content";
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
-import {Gallery} from '../components/Gallery';
+// import {Gallery} from '../components/Gallery';
 const allProjects = await getCollection("projects");
 const pageTitle = "Works";
 import { data } from "../content/data"
@@ -48,34 +48,3 @@ const artsEntries = await getCollection("arts")
     </div>
 
 </Layout>
-
-
-<!-- <script>
-  
-document.addEventListener('DOMContentLoaded', () => {
-  const notice = document.getElementById('scrollNotice');
-  const target = document.getElementById('triggerSection');
-
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        // Mostra l'avviso
-        notice.classList.add('show');
-
-        // Nasconde dopo 4 secondi
-        setTimeout(() => {
-          notice.classList.remove('show');
-        }, 4000);
-
-        // Disattiva l'osservatore dopo la prima attivazione
-        observer.unobserve(target);
-      }
-    });
-  }, {
-    threshold: 0.5 // attiva quando metà della sezione è visibile
-  });
-
-  observer.observe(target);
-});
-
-</script> -->

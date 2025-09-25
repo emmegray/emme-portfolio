@@ -4,7 +4,6 @@ import { data } from "../content/data"
 
 const images = data.Works.Arts;
 const thumbnails = data.Works.Arts.map((item) => item.thumbnail ?? item.src);
-
 ---
 
 <Swiper
@@ -32,7 +31,18 @@ const thumbnails = data.Works.Arts.map((item) => item.thumbnail ?? item.src);
     {
       images.map((image, idx) => (
         <SwiperSlide>
-          <div class="swiper-zoom-container animated-cursor "><img src={image.src} alt={image.alt} loading="lazy" />
+          <div class="swiper-zoom-container">
+            <img
+              class="imgArt"
+              src={image.src}
+              alt={image.alt}
+              loading="lazy"
+              style="cursor:zoom-in;"
+              data-title={image.title ?? ""}
+              data-description={image.description ?? ""}
+              data-year={image.year ?? ""}
+              data-tool={image.tool ?? ""}
+            />
           </div>
         </SwiperSlide>
       ))
@@ -63,3 +73,52 @@ const thumbnails = data.Works.Arts.map((item) => item.thumbnail ?? item.src);
   </SwiperWrapper>
 </Swiper>
 
+<div id="artImagePopup" class="image-popup" style="display:none;">
+  <img id="artPopupImg" src="" alt="" />
+  <!-- <div class="image-popup-card" id="artPopupInfo"></div> -->
+  <button id="artPopupClose" type="button">X</button>
+</div>
+
+<script type="text/javascript">
+
+  function setupArtPopup() {
+    const popup = document.getElementById('artImagePopup');
+    const popupImg = document.getElementById('artPopupImg');
+    const popupInfo = document.getElementById('artPopupInfo');
+    const popupClose = document.getElementById('artPopupClose');
+    const swiperArt = document.querySelector('.swiper-art');
+
+    if (!swiperArt) {
+      setTimeout(setupArtPopup, 100);
+      return;
+    }
+
+    swiperArt.addEventListener('click', function(e) {
+      const img = e.target.closest('.imgArt');
+      if (img) {
+        popup.style.display = "flex";
+        popupImg.src = img.src;
+        popupImg.alt = img.alt;
+
+        let infoHtml = "<ul>";
+        if (img.dataset.title) infoHtml += `<li>${img.dataset.title}</li>`;
+        if (img.dataset.description) infoHtml += `<li>${img.dataset.description}</li>`;
+        if (img.dataset.year) infoHtml += `<li>${img.dataset.year}</li>`;
+        if (img.dataset.tool) infoHtml += `<li>${img.dataset.tool}</li>`;
+        infoHtml += "</ul>";
+        popupInfo.innerHTML = infoHtml;
+      }
+    });
+
+    popupClose.onclick = function(e) {
+      e.stopPropagation();
+      popup.style.display = "none";
+    };
+
+    popup.onclick = function(e) {
+      if (e.target === popup) popup.style.display = "none";
+    };
+  }
+
+  document.addEventListener("DOMContentLoaded", setupArtPopup);
+</script>
