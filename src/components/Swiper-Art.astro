@@ -31,7 +31,6 @@ const thumbnails = data.Works.Arts.map((item) => item.thumbnail ?? item.src);
     {
       images.map((image, idx) => (
         <SwiperSlide>
-          <div>
             <img
               class="imgArt"
               src={image.src}
@@ -43,7 +42,6 @@ const thumbnails = data.Works.Arts.map((item) => item.thumbnail ?? item.src);
               data-year={image.year ?? ""}
               data-tool={image.tool ?? ""}
             />
-          </div>
         </SwiperSlide>
       ))
     }
