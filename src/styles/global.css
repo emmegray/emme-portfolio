@@ -263,7 +263,6 @@ header a:hover::before {
 
 .card-info ul {
   margin: 0;
-  padding: 5px 20px 0;
 }
 
 .card-info li {
@@ -1091,7 +1090,6 @@ border: 1px solid rgba(255, 255, 255, 0.28);
   font-size: 1em;
 }
 .card-info ul {
-  margin: 0.5em 0 0 1em;
   padding: 0;
 }
 .card-info li {
