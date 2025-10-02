@@ -4,6 +4,7 @@ import Layout from '../layouts/Layout.astro';
 const allProjects = await getCollection("projects");
 const pageTitle = "Works";
 import { data } from "../content/data"
+import ExperienceTimeline from '../components/ExperienceTimeline.astro';
 ---
 <Layout pageTitle={pageTitle}>
     <div>
@@ -24,33 +25,8 @@ import { data } from "../content/data"
       <p>{data.About.Intro}</p>
     </div>
     <h2 style="font-weight: bold;">Experiences:</h2>
-    <div>
-      {data.About.Experiences.map((experience) => (
-        <div
-          class="card-info"
-          key={experience.company}
-        >
-          <h2>{experience.title}</h2>
-          <h3>{experience.subtitle}</h3>
-          <p>{experience.description}</p>
+    
+    <ExperienceTimeline />
 
-          {experience.skills && (
-            <ul>
-              {experience.skills.map((skill) => (
-                <li key={skill}>{skill}</li>
-              ))}
-            </ul>
-          )}
-        </div>
-      ))}
-      <div id="emme-hype" class="white-line" style="padding-bottom: 0;">
-        <img
-          src="/material/Emme hype.gif"
-          alt="Emme hype"
-          width="340"
-          loading="lazy"
-        />
-      </div>
-    </div>
 </Layout>
 
