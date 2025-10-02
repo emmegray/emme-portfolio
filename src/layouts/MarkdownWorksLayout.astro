@@ -3,15 +3,17 @@ import BaseLayout from './Layout.astro';
 const { frontmatter } = Astro.props;
 ---
 <BaseLayout pageTitle={frontmatter.title}>
-    <h2>{frontmatter.title}</h2>
-    <slot />
-    <ul class="badge__list">
-        <li><span class="badge badge--item">PLATFORM</span>{frontmatter.platform}</li>
-        <li><span class="badge badge--item">STACK</span>{frontmatter.stack}</li>
-        <li><span class="badge badge--item">WEBSITE</span><a class="badge__link" href={frontmatter.website} target="_blank">{frontmatter.website}</a></li>
-        <li><span class="badge badge--item">GITHUB</span><a class="badge__link" href={frontmatter.website} target="_blank">{frontmatter.github}</a></li>
-    </ul>
-    <div class="center">
-        <img class="pro-img" width="100%" height="100%" src={frontmatter.worksImage1.url} alt={frontmatter.worksImage1.alt} />
+    <div class="card-info">
+      <h2>{frontmatter.title}</h2>
+      <slot />
+      <ul class="badge__list">
+          <li><span class="badge badge--item">PLATFORM</span>{frontmatter.platform}</li>
+          <li><span class="badge badge--item">STACK</span>{frontmatter.stack}</li>
+          <li><span class="badge badge--item">WEBSITE</span><a class="badge__link" href={frontmatter.website} target="_blank">{frontmatter.website}</a></li>
+          <li><span class="badge badge--item">GITHUB</span><a class="badge__link" href={frontmatter.website} target="_blank">{frontmatter.github}</a></li>
+      </ul>
+      <div class="center">
+          <img class="pro-img" width="100%" height="100%" src={frontmatter.worksImage1.url} alt={frontmatter.worksImage1.alt} />
+      </div>
     </div>
 </BaseLayout>

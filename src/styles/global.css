@@ -221,7 +221,7 @@ header a:hover::before {
 
 /* About card */
 
-#about-card {
+.card-info {
   --bs-bg-opacity: 1;
   background: rgba(0, 0, 0, 0.25);
   border-radius: 16px;
@@ -236,37 +236,37 @@ header a:hover::before {
   will-change: transform;
 }
 
-#about-card div {
+.card-info div {
   position: relative;
   z-index: 1;
   transition: transform 0.3s ease;
 }
 
-#about-card:hover {
+.card-info:hover {
   transform: translateZ(12px);
 }
 
-#about-card h2 {
+.card-info h2 {
   margin: 1px;
 }
 
-#about-card h3 {
+.card-info h3 {
   font-style: italic;
   font-weight: normal;
   padding: 0;
 }
 
-#about-card p {
+.card-info p {
   margin: 1px;
   font-weight: lighter;
 }
 
-#about-card ul {
+.card-info ul {
   margin: 0;
   padding: 5px 20px 0;
 }
 
-#about-card li {
+.card-info li {
   font-weight: 100;
   margin: 10px;
 }
