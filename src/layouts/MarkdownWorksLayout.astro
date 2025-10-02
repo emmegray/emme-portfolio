@@ -9,10 +9,9 @@ const { frontmatter } = Astro.props;
         <li><span class="badge badge--item">PLATFORM</span>{frontmatter.platform}</li>
         <li><span class="badge badge--item">STACK</span>{frontmatter.stack}</li>
         <li><span class="badge badge--item">WEBSITE</span><a class="badge__link" href={frontmatter.website} target="_blank">{frontmatter.website}</a></li>
-        <li><span class="badge badge--item">GITHUB</span><a class="badge__link" href={frontmatter.github} target="_blank">{frontmatter.github}</a></li>
+        <li><span class="badge badge--item">GITHUB</span><a class="badge__link" href={frontmatter.website} target="_blank">{frontmatter.website}</a></li>
     </ul>
     <div class="center">
         <img class="pro-img" width="100%" height="100%" src={frontmatter.worksImage1.url} alt={frontmatter.worksImage1.alt} />
     </div>
 </BaseLayout>
-
