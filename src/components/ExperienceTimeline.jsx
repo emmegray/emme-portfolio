@@ -49,7 +49,7 @@ export default function ExperienceTimelineReact({ experiences }) {
           <h3>{exp.subtitle}</h3>
           {exp.description && <p>{exp.description}</p>}
           {Array.isArray(exp.skills) && (
-            <ul>
+            <ul className="color-with-svg">
               {exp.skills.map((skill, i) => (
                 <li key={i}>{skill}</li>
               ))}
