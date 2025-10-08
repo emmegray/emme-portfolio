@@ -1144,7 +1144,6 @@ border: 1px solid rgba(255, 255, 255, 0.28);
   overflow-x: auto;
   padding-bottom: 8px;
   scroll-snap-type: x mandatory;
-  /* rimuovi height/min-height/max-height se presenti */
 }
 
 .card-info {
@@ -1189,7 +1188,7 @@ border: 1px solid rgba(255, 255, 255, 0.28);
 }
 
 .exp-arrow--right {
-  right: 0;
+  right: 23px !important;
 }
 
 .exp-arrow:hover,
