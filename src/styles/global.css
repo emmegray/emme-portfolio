@@ -1176,7 +1176,7 @@ border: 1px solid rgba(255, 255, 255, 0.28);
   height: 44px;
   font-size: 2rem;
   background: #ffffff7a;
-  color: #000000;
+  color: #494949;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -1190,10 +1190,6 @@ border: 1px solid rgba(255, 255, 255, 0.28);
 
 .exp-arrow--left {
   left: 0;
-}
-
-.exp-arrow--right {
-  right: 23px !important;
 }
 
 .exp-arrow:hover,
@@ -1230,7 +1226,7 @@ border: 1px solid rgba(255, 255, 255, 0.28);
 }
 
 .card-info {
-  flex: 0 0 90%;
+  flex: 0 0 100%;
   scroll-snap-align: center;
   background: rgba(255,255,255,0.97);
   border-radius: 16px;
