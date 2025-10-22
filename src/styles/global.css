@@ -11,6 +11,11 @@
   --body: "Josefin Sans", sans-serif;
 }
 
+img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+}
 /* Font */
 .permanent-marker-regular {
   font-family: "Permanent Marker", cursive;
@@ -354,6 +359,8 @@ header a:hover::before {
 .card {
   list-style: none;
   display: flex;
+  justify-content: center;
+  align-items: center;
   width: auto;
   background: white;
   padding: 0.4em;
