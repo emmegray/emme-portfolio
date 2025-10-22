@@ -2,13 +2,14 @@
 import Layout from '../layouts/Layout.astro';
 const pageTitle = "Emme portfolio";
 import { data } from "../content/data"
+import { Image } from 'astro:assets';
 ---
 <Layout pageTitle={pageTitle} >
 
       <!-- <Swing duration={1500}> -->
         <br>
         <div style="text-align: center;">
-          <img width="300" height="259" alt="RaccoonSpaceGif" src="/material/Emme patata.png" id="emme-patata"/>
+        <Image src="/material/Emme patata.png" alt="Emme patata icon" layout='constrained' width={300} height={259} id="emme-patata" />
         </div>
       <!-- </Swing> -->
 
