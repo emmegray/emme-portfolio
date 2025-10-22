@@ -6,6 +6,7 @@ import Card from '../components/Card.astro';
 const allProjects = await getCollection("projects");
 const pageTitle = "Works";
 import { data } from "../content/data"
+import { Image } from 'astro:assets';
 import SwiperArt from "../components/Swiper-Art.astro";
 import SwiperGraphic from "../components/Swiper-Graphic.astro";
 
@@ -39,12 +40,7 @@ const artsEntries = await getCollection("arts")
     <SwiperGraphic/>
 
     <div id="emme-show" class="white-line" style="padding-bottom: 0;">
-      <img
-        src="/material/Emme che fa vedere cose.png"
-        alt="Emme che mostra cose"
-        width="340"
-        loading="lazy"
-      />
+      <Image src="/material/Emme che fa vedere cose.png" alt="Emme che mostra cose" layout='constrained' width={340} height={259} loading="lazy" />
     </div>
 
 </Layout>

@@ -6,12 +6,10 @@ import { Image } from 'astro:assets';
 ---
 <Layout pageTitle={pageTitle} >
 
-      <!-- <Swing duration={1500}> -->
         <br>
         <div style="text-align: center;">
-        <Image src="/material/Emme patata.png" alt="Emme patata icon" layout='constrained' width={300} height={259} id="emme-patata" />
+        <Image src="/material/Emme patata.png" alt="Emme patata icon" layout='constrained' width={300} height={259} loading="lazy" id="emme-patata" />
         </div>
-      <!-- </Swing> -->
 
       <h1 class="display-5 fw-bold lh-1 mb-3 text-white">
         Ciao! <i class="fa-solid fa-music fa-bounce"></i>

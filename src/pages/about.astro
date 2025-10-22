@@ -5,20 +5,14 @@ const allProjects = await getCollection("projects");
 const pageTitle = "Works";
 import { data } from "../content/data"
 import ExperienceTimeline from '../components/ExperienceTimeline.astro';
+import { Image } from 'astro:assets';
+
 ---
 <Layout pageTitle={pageTitle}>
     <div>
       <div class="polaroid">
         <span>
-          <img
-            id="emme-photo-about"
-            src="/material/photo2.jpg"
-            class="d-block mx-lg-auto img-fluid"
-            alt="Ehy that's me!"
-            width="400"
-            loading="lazy"
-            title="Ehy that's me!"
-          />
+          <Image src="/material/photo2.jpg" alt="Ehy that's me!" layout='constrained' width={400} height={259} loading="lazy" id="emme-photo-about" />
         </span>
       </div>
       <h2 style="font-weight: bold;">About me</h2>

@@ -1,6 +1,7 @@
 ---
 import { Swiper, SwiperWrapper, SwiperSlide, SwiperButtonPrev, SwiperButtonNext } from "astro-swiper";
 import { data } from "../content/data"
+import { Image } from 'astro:assets';
 
 const images = data.Works.Arts;
 const thumbnails = data.Works.Arts.map((item) => item.thumbnail ?? item.src);
@@ -31,8 +32,7 @@ const thumbnails = data.Works.Arts.map((item) => item.thumbnail ?? item.src);
     {
       images.map((image, idx) => (
         <SwiperSlide>
-            <img
-              class="imgArt"
+            <Image  class="imgArt"
               src={image.src}
               alt={image.alt}
               loading="lazy"
@@ -41,7 +41,7 @@ const thumbnails = data.Works.Arts.map((item) => item.thumbnail ?? item.src);
               data-description={image.description ?? ""}
               data-year={image.year ?? ""}
               data-tool={image.tool ?? ""}
-            />
+              layout='constrained' width={400} height={259} loading="lazy" />
         </SwiperSlide>
       ))
     }

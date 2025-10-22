@@ -160,6 +160,7 @@ header a:hover::before {
 }
 
 .polaroid span {
+  border-radius: 12px;
   font-family: var(--header);
   background: #ffffff;
   display: inline-block;
@@ -187,7 +188,7 @@ header a:hover::before {
 
 .polaroid img {
   display: block;
-  width: 300px;
+  width: auto;
 }
 
 .polaroid {
@@ -227,7 +228,7 @@ header a:hover::before {
 .card-info {
   --bs-bg-opacity: 1;
   background: rgba(0, 0, 0, 0.25);
-  border-radius: 16px;
+  border-radius: 12px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(6.8px);
   -webkit-backdrop-filter: blur(6.8px);
@@ -377,6 +378,7 @@ header a:hover::before {
 
 .card__img {
   width: 100%;
+  border-radius: 12px;
 }
 
 .card__title {
