@@ -64,7 +64,9 @@ const thumbnails = data.Works.Arts.map((item) => item.thumbnail ?? item.src);
     {
       thumbnails.map((thumb, idx) => (
         <SwiperSlide>
-          <img src={thumb} alt="" loading="lazy" />
+          <Image src={thumb}  alt="Art thumbnails"
+              loading="lazy"
+              layout='constrained' width={90} height={90} loading="lazy" />
         </SwiperSlide>
       ))
     }
@@ -73,7 +75,6 @@ const thumbnails = data.Works.Arts.map((item) => item.thumbnail ?? item.src);
 
 <div id="artImagePopup" class="image-popup" style="display:none;">
   <img id="artPopupImg" src="" alt="" />
-  <!-- <div class="image-popup-card" id="artPopupInfo"></div> -->
   <button id="artPopupClose" type="button">X</button>
 </div>
 

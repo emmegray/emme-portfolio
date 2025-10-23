@@ -16,6 +16,7 @@ img {
   height: auto;
   max-width: 100%;
 }
+
 /* Font */
 .permanent-marker-regular {
   font-family: "Permanent Marker", cursive;
@@ -28,7 +29,6 @@ html {
   background: rgb(99, 14, 20);
   background: radial-gradient(circle, rgba(99, 14, 20, 1) 0%, rgba(179, 41, 69, 1) 100%);
   color: var(--text);
-  cursor: url("/public/material/Grumpy.png") !important;
 }
 
 body {
@@ -128,12 +128,6 @@ header a:hover::before {
   color: white;
 }
 
-
-/* Cursor custom */
-* {
-  cursor: url("/public/material/Grumpy.png") !important;
-}
-
 #emme-patata {
   -webkit-animation: mover 2s infinite alternate;
   animation: mover 2s infinite alternate;
@@ -165,7 +159,6 @@ header a:hover::before {
 }
 
 .polaroid span {
-  border-radius: 12px;
   font-family: var(--header);
   background: #ffffff;
   display: inline-block;
@@ -307,7 +300,6 @@ header a:hover::before {
   margin-right: 4px;
   letter-spacing: 2px;
 }
-
 
 .badge__link {
   vertical-align: middle;
@@ -808,7 +800,7 @@ button {
   }
 }
 
-/* Pulsanti Swiper (valgono per tutti) */
+/* Pulsanti Swiper */
 .swiper-button-next,
 .swiper-button-prev {
   color: #fff !important;
@@ -847,20 +839,6 @@ button {
   color: #fff !important;
   text-shadow: 0 2px 8px #000a;
 }
-
-/* Icon 
-
-.icon-bounce-in {
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    -webkit-transition-duration: 0.5s;
-    transition-duration: 0.5s;
-}
-
-*/
 
 /* Divider */
 .h-divider {
@@ -950,6 +928,7 @@ button {
   border-radius: 16px;
   overflow: hidden;
 }
+
 .gallery-image-wrapper img {
   width: 100%;
   height: 100%;
@@ -1165,6 +1144,7 @@ border: 1px solid rgba(255, 255, 255, 0.28);
   margin: 0 0.5rem;
   box-sizing: border-box;
 }
+
 .exp-arrows-row {
   display: flex;
   align-items: flex-start;
@@ -1172,6 +1152,7 @@ border: 1px solid rgba(255, 255, 255, 0.28);
   width: 100%;
   margin-bottom: 1rem;
 }
+
 .exp-arrow {
   font-family: swiper-icons;
     font-size: var(--swiper-navigation-size);
@@ -1254,6 +1235,7 @@ border: 1px solid rgba(255, 255, 255, 0.28);
 .color-with-svg {
   list-style: none;
 }
+
 .color-with-svg li::before {
   content: "";
   width: 1em;
