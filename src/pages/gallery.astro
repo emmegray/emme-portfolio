@@ -1,0 +1,43 @@
+---
+import { getCollection } from "astro:content";
+import Layout from '../layouts/Layout.astro';
+const allProjects = await getCollection("projects");
+const pageTitle = "Gallery";
+import { data } from "../content/data"
+import { Image } from 'astro:assets';
+import { LightGallery } from 'astro-lightgallery'
+
+const artsEntries = await getCollection("arts")
+const images = data.Works.Arts;
+---
+<Layout pageTitle={pageTitle}>
+  <div class="h-divider">
+  <div class="text" id="triggerSection"><h2>Gallery</h2></div></div>
+
+  <LightGallery
+    class="..."
+    options={{
+    thumbnail: true,
+    autoplay: true,
+    slideShowInterval: 500,
+    }}
+    addPlugins={[ 'zoom' ]}
+  >
+{
+  images.map(image => (
+    <a class="..." href={image.src}>
+        <Image
+        src={image.src}
+        alt={image.alt}
+        loading="lazy"
+        layout='constrained'
+        width={400} height={259}
+        />
+    </a>
+  ))
+}
+</LightGallery>
+
+    <div class="h-divider">
+
+</Layout>

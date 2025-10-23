@@ -2,7 +2,6 @@
 import { getCollection } from "astro:content";
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
-// import {Gallery} from '../components/Gallery';
 const allProjects = await getCollection("projects");
 const pageTitle = "Works";
 import { data } from "../content/data"
@@ -10,7 +9,11 @@ import { Image } from 'astro:assets';
 import SwiperArt from "../components/Swiper-Art.astro";
 import SwiperGraphic from "../components/Swiper-Graphic.astro";
 
+// import { LightGallery } from 'astro-lightgallery'
+
 const artsEntries = await getCollection("arts")
+const imgArt = data.Works.Arts;
+const imgEmote = data.Works.Emote;
 
 ---
 <Layout pageTitle={pageTitle}>
@@ -29,6 +32,31 @@ const artsEntries = await getCollection("arts")
       <div class="h-divider" style="margin-top: 80px;">
   <div class="shadow"></div>
   <div class="text" id="triggerSection"><h2>Arts projects:</h2></div></div>
+
+<!--    <LightGallery
+class="..."
+options={{
+  thumbnail: true,
+  autoplay: true,
+  slideShowInterval: 500,
+  }}
+addPlugins={[ 'zoom' ]}
+>
+{
+  imgArt.map(image => (
+    <a class="..." href={image.src}>
+        <Image
+        src={image.src}
+        alt={image.alt}
+        loading="lazy"
+        layout='constrained'
+        width={400} height={259}
+        />
+    </a>
+  ))
+}
+</LightGallery> -->
+
 
     <SwiperArt/>
     

@@ -41,7 +41,7 @@ const thumbnails = data.Works.Arts.map((item) => item.thumbnail ?? item.src);
               data-description={image.description ?? ""}
               data-year={image.year ?? ""}
               data-tool={image.tool ?? ""}
-              layout='constrained' width={400} height={259} loading="lazy" />
+              layout='constrained' width={400} height={259} />
         </SwiperSlide>
       ))
     }
