@@ -1259,8 +1259,6 @@ border: 1px solid rgba(255, 255, 255, 0.28);
 }
 
 .timeline-container {
-  height: 100vh;
-  overflow-y: scroll;
   scroll-behavior: smooth;
   padding: 20px;
 }
