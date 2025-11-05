@@ -1,0 +1,9 @@
+
+cat <<EOF > netlify.toml
+[build]
+  command = "pnpm build"
+  publish = "dist"
+
+[functions]
+  directory = "netlify/functions"
+EOF
