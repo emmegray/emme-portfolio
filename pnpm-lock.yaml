@@ -41,6 +41,9 @@ importers:
       astro-bootstrap:
         specifier: ^0.7.0
         version: 0.7.2(astro@5.14.8(@types/node@24.5.2)(rollup@4.52.2)(sass-embedded@1.93.2)(sass@1.93.2)(typescript@5.9.2))(bootstrap@5.3.8(@popperjs/core@2.11.8))
+      astro-lightgallery:
+        specifier: ^2.0.1
+        version: 2.0.1
       astro-swiper:
         specifier: ^1.1.0
         version: 1.1.0
@@ -903,6 +906,9 @@ packages:
       astro: 5.x
       bootstrap: 5.x
 
+  astro-lightgallery@2.0.1:
+    resolution: {integrity: sha512-4yR/NvBrp5UHDfGutmwuJdL4wgFh8gKK3V5G772+I+g+k3yGTT5/nzJL1cTJHT0txxPLu6S9FMacoCl68vx2vw==}
+
   astro-swiper@1.1.0:
     resolution: {integrity: sha512-GYQZ2P1H4KiGf9P7boGfdXnSxap+7bYqirQwIyrrDCdwE16IF+33Ns9CNYhqoHoCeAnfmsd3tQ8vwenxD8/hFg==}
 
@@ -1363,6 +1369,10 @@ packages:
   kleur@4.1.5:
     resolution: {integrity: sha512-o+NO+8WrRiQEE4/7nwRJhN1HWpVmJm511pBHUxPLtp0BUISzlBplORYSmTclCnJvQq2tKu/sgl3xVpkc7ZWuQQ==}
     engines: {node: '>=6'}
+
+  lightgallery@2.9.0:
+    resolution: {integrity: sha512-58Ud1DyhD2ao58t+kPEqSZrjFxg23tGd5ZKr75erm7q31g5xhUtWUJH3sTUkhHzlyJAKHj5eTrJ37HQRXG4Wbg==}
+    engines: {node: '>=6.0.0'}
 
   lines-and-columns@1.2.4:
     resolution: {integrity: sha512-7ylylesZQ/PV29jhEDl3Ufjo6ZX7gCqJr5F7PKrqc93v7fzSymt1BpwEU8nAUXs8qzzvqhbjhK5QZg6Mt/HkBg==}
@@ -3026,6 +3036,10 @@ snapshots:
       nanoid: 5.1.6
       title-case: 4.3.2
 
+  astro-lightgallery@2.0.1:
+    dependencies:
+      lightgallery: 2.9.0
+
   astro-swiper@1.1.0:
     dependencies:
       swiper: 11.2.10
@@ -3582,6 +3596,8 @@ snapshots:
   kleur@3.0.3: {}
 
   kleur@4.1.5: {}
+
+  lightgallery@2.9.0: {}
 
   lines-and-columns@1.2.4: {}
 
