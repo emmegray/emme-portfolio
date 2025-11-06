@@ -31,7 +31,7 @@
     "react-awesome-reveal": "^4.3.1",
     "react-dom": "^18.3.1",
     "swiper": "^11.2.10",
-    "vite": "^6.0.7",
+    "vite": "^6.4.1",
     "webcoreui": "^0.8.1"
   },
   "devDependencies": {
