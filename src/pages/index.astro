@@ -11,7 +11,7 @@ import { Image } from 'astro:assets';
       <Image src="/material/emme-patata.png" alt="Emme patata icon" width={300} height={259} loading="lazy" id="emme-patata" />
     </div>
 
-    <h1 class="display-5 fw-bold lh-1 mb-3 text-white">
+    <h1 className="display-5 fw-bold lh-1 mb-3 text-white">
       Ciao! <i className="fa-solid fa-music fa-bounce"></i>
       <br>
       I'm <b>Manuela</b>,
@@ -23,13 +23,13 @@ import { Image } from 'astro:assets';
       I'm a creative chill person with the passion of learning new things while destroying them to understand how they work.<br>
       If you are curious to know more about me feel free to browse this portfolio to see my work and more!
     </p>
-    <div className="social-wrap">
-      <span>Keep in touch!</span>
-      <div class="social-container">
-        {data.Contact.Socials.map((social) => (
-          <a href={social.link} target="_blank"><i class={social.icon} style={`font-size: large; padding: 10px;`}></i></a>
-        ))}
-      </div>
+    <div class="social-wrap">
+        <span>Keep in touch!</span>
+        <div class="social-container">
+            {data.Contact.Socials.map((social) => (
+      <a href={social.link} target="_blank"><i class={social.icon} style="font-size: large; padding:10px;"></i></a>
+))}
+        </div>
     </div>
   </div>
 </Layout>
