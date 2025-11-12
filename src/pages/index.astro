@@ -4,32 +4,32 @@ const pageTitle = "Emme portfolio";
 import { data } from "../content/data"
 import { Image } from 'astro:assets';
 ---
-<Layout pageTitle={pageTitle} >
+<Layout pageTitle={pageTitle}>
+  <div>
+    <br>
+    <div style="text-align: center;">
+      <Image src="/material/emme-patata.png" alt="Emme patata icon" width={300} height={259} loading="lazy" id="emme-patata" />
+    </div>
 
-        <br>
-        <div style="text-align: center;">
-        <Image src="/material/Emme patata.png" alt="Emme patata icon" layout='constrained' width={300} height={259} loading="lazy" id="emme-patata" />
-        </div>
-
-      <h1 class="display-5 fw-bold lh-1 mb-3 text-white">
-        Ciao! <i class="fa-solid fa-music fa-bounce"></i>
-        <br>
-        I'm <b>Manuela</b>,
-      </h1>
-      <h2>
-        a Front-end Developer, Digital 2D Artist and Twitch Streamer from Italy
-      </h2>
+    <h1 class="display-5 fw-bold lh-1 mb-3 text-white">
+      Ciao! <i className="fa-solid fa-music fa-bounce"></i>
+      <br>
+      I'm <b>Manuela</b>,
+    </h1>
+    <h2>
+      a Front-end Developer, Digital 2D Artist and Twitch Streamer from Italy
+    </h2>
     <p>
       I'm a creative chill person with the passion of learning new things while destroying them to understand how they work.<br>
       If you are curious to know more about me feel free to browse this portfolio to see my work and more!
     </p>
-      <div class="social-wrap">
-        <span>Keep in touch!</span>
-        <div class="social-container">
-            {data.Contact.Socials.map((social) => (
-      <a href={social.link} target="_blank"><i class={social.icon} style="font-size: large; padding:10px;"></i></a>
-))}
-        </div>
+    <div className="social-wrap">
+      <span>Keep in touch!</span>
+      <div class="social-container">
+        {data.Contact.Socials.map((social) => (
+          <a href={social.link} target="_blank"><i class={social.icon} style={`font-size: large; padding: 10px;`}></i></a>
+        ))}
+      </div>
     </div>
-
+  </div>
 </Layout>
