@@ -47,9 +47,6 @@ importers:
       astro-swiper:
         specifier: ^1.1.0
         version: 1.1.0
-      astro-tooltips:
-        specifier: ^0.6.2
-        version: 0.6.2
       bootstrap:
         specifier: ^5.3.3
         version: 5.3.8(@popperjs/core@2.11.8)
@@ -1081,9 +1078,6 @@ packages:
 
   astro-swiper@1.1.0:
     resolution: {integrity: sha512-GYQZ2P1H4KiGf9P7boGfdXnSxap+7bYqirQwIyrrDCdwE16IF+33Ns9CNYhqoHoCeAnfmsd3tQ8vwenxD8/hFg==}
-
-  astro-tooltips@0.6.2:
-    resolution: {integrity: sha512-I9uXbchctnRqbc0mnxKcBRfweMuql/U+619+MzNvq3kANc7xthOXj6cMNgAkTaXoHJLdFMKL3Fx6vB5cyiiRXg==}
 
   astro@5.15.3:
     resolution: {integrity: sha512-wUO/isJrcUoduRoKacKB9jpO6TxTlPV1zw8UqQx39jSNY7z9IxusJAiib3AiNvqK+dCWhqXx+OnExCCwELmcUw==}
@@ -2175,9 +2169,6 @@ packages:
   tinyglobby@0.2.15:
     resolution: {integrity: sha512-j2Zq4NyQYG5XMST4cbs02Ak8iJUdxRM0XI5QyxXuZOzKOINmWurp3smXu3y5wDcJrptwpSjgXHzIQxR0omXljQ==}
     engines: {node: '>=12.0.0'}
-
-  tippy.js@6.3.7:
-    resolution: {integrity: sha512-E1d3oP2emgJ9dRQZdf3Kkn0qJgI6ZLpyS5z6ZkY1DF3kaQaBsGZsndEpHwx+eC+tYM41HaSNvNtLx8tU57FzTQ==}
 
   title-case@4.3.2:
     resolution: {integrity: sha512-I/nkcBo73mO42Idfv08jhInV61IMb61OdIFxk+B4Gu1oBjWBPOLmhZdsli+oJCVaD+86pYQA93cJfFt224ZFAA==}
@@ -3304,10 +3295,6 @@ snapshots:
   astro-swiper@1.1.0:
     dependencies:
       swiper: 11.2.10
-
-  astro-tooltips@0.6.2:
-    dependencies:
-      tippy.js: 6.3.7
 
   astro@5.15.3(@types/node@24.5.2)(rollup@4.52.5)(sass-embedded@1.93.2)(sass@1.93.2)(typescript@5.9.2):
     dependencies:
@@ -4754,10 +4741,6 @@ snapshots:
     dependencies:
       fdir: 6.5.0(picomatch@4.0.3)
       picomatch: 4.0.3
-
-  tippy.js@6.3.7:
-    dependencies:
-      '@popperjs/core': 2.11.8
 
   title-case@4.3.2: {}
 

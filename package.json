@@ -23,7 +23,6 @@
     "astro-bootstrap": "^0.7.0",
     "astro-lightgallery": "^2.0.1",
     "astro-swiper": "^1.1.0",
-    "astro-tooltips": "^0.6.2",
     "bootstrap": "^5.3.3",
     "framer-motion": "^12.23.22",
     "motion": "^11.11.17",
@@ -39,7 +38,7 @@
     "sass-embedded": "^1.81.0"
   },
   "packageManager": "pnpm@9.15.4",
-    "engines": {
+  "engines": {
     "node": "18.x"
   }
 }
