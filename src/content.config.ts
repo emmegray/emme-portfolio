@@ -1,8 +1,6 @@
 import { z, defineCollection } from "astro:content";
-import { array } from "astro:schema";
 
 const projectsCollection = defineCollection({
-  type: "content",
   schema: z.object({
     title: z.string(),
     description: z.string(),
@@ -26,7 +24,6 @@ const projectsCollection = defineCollection({
 });
 
 const artsCollection = defineCollection({
-  type: "content",
   schema: z.object({
     title: z.string(),
     src: z.string(),
@@ -38,8 +35,7 @@ const artsCollection = defineCollection({
 });
 
 const emoteCollection = defineCollection({
-  type: "content",
-  schema: z.object({
+  loader: file("src/content/emotes/**/*.md
     title: z.string(),
     description: z.string(),
     image: z.object({
@@ -49,15 +45,14 @@ const emoteCollection = defineCollection({
     slides: z.array(z.object({
       url: z.string(),
       alt: z.string(),
-    }),),
+    })),
     year: z.number(),
     tool: z.string(),
   }),
 });
 
 const postsCollection = defineCollection({
-  type: "content",
-  schema: z.object({
+  loader: file("src/content/posts/**/*.md"
     title: z.string(),
     date: z.string(),
     image: z.object({

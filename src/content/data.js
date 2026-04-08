@@ -263,62 +263,62 @@ export const data = {
     Emote: [
       {
         alt: "Twitch emote commission Lucho set 1",
-        src: "/emote/Twitch commission - Lucho emote showcase 1.png",
+        src: "/emote/Twitch-commission---Lucho-emote-showcase-1.png",
         slug: "lucho",
       },
       {
         alt: "Twitch emote commission Lucho set 2",
-        src: "/emote/Twitch commission - Lucho emote showcase 2.png",
+        src: "/emote/Twitch-commission---Lucho-emote-showcase-2.png",
         slug: "lucho",
       },
       {
         alt: "Twitch emote commission Lucho set 3",
-        src: "/emote/Twitch commission - Lucho emote showcase 3.gif",
+        src: "/emote/Twitch-commission---Lucho-emote-showcase-3.gif",
         slug: "lucho",
       },
       {
         alt: "Twitch emote commission Lucho set 4",
-        src: "/emote/Twitch commission - Lucho emote showcase 4.png",
+        src: "/emote/Twitch-commission---Lucho-emote-showcase-4.png",
         slug: "lucho",
       },
       {
         alt: "Twitch emote commission MetalZarko set 2",
-        src: "/emote/Twitch commission - MetalZarko emote showcase 2.png",
+        src: "/emote/Twitch-commission---MetalZarko-emote-showcase-2.png",
         slug: "zarko",
       },
       {
         alt: "Twitch emote commission MetalZarko set 1",
-        src: "/emote/Twitch commission - MetalZarko emote showcase.png",
+        src: "/emote/Twitch-commission---MetalZarko-emote-showcase.png",
         slug: "zarko",
       },
       {
         alt: "Twitch emote commission Prongedleaf",
-        src: "/emote/Twitch commission - Prongedleaf emote showcase.png",
+        src: "/emote/Twitch-commission---Prongedleaf-emote-showcase.png",
         slug: "leaf",
       },
       {
         alt: "Twitch emote commission Saetta set 1",
-        src: "/emote/Twitch commission - Saetta badges showcase 1.gif",
+        src: "/emote/Twitch-commission---Saetta-badges-showcase-1.gif",
         slug: "saetta",
       },
       {
         alt: "Twitch badge commission Saetta",
-        src: "/emote/Twitch commission - Saetta badges showcase.png",
+        src: "/emote/Twitch-commission---Saetta-badges-showcase.png",
         slug: "saetta",
       },
       {
         alt: "Twitch badge commission Stormy",
-        src: "/emote/Twitch commission - showcase Stormy.png",
+        src: "/emote/Twitch-commission---showcase-Stormy.png",
         slug: "stormy",
       },
       {
         alt: "Twitch emote commission Elly",
-        src: "/emote/Twitch commission showcase 2.png",
+        src: "/emote/Twitch-commission-showcase-2.png",
         slug: "elly",
       },
       {
         alt: "Twitch emote commission Elly",
-        src: "/emote/Twitch commission showcase.gif",
+        src: "/emote/Twitch-commission-showcase.gif",
         slug: "elly",
       },
       {
