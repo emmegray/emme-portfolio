@@ -4,7 +4,6 @@ import { data } from "../content/data"
 import { Image } from 'astro:assets';
 
 const images = data.Works.Emote;
-const thumbnails = data.Works.Emote.map((item) => item.thumbnail ?? item.src);
 ---
 
 <Swiper
@@ -39,10 +38,6 @@ const thumbnails = data.Works.Emote.map((item) => item.thumbnail ?? item.src);
             alt={image.alt ?? ""}
             loading="lazy"
             style="cursor:zoom-in;"
-            data-title={image.title ?? ""}
-            data-description={image.description ?? ""}
-            data-year={image.year ?? ""}
-            data-tool={image.tool ?? ""}
             layout='constrained' width={540} height={400} loading="lazy" 
           />
         </div>
@@ -66,9 +61,9 @@ const thumbnails = data.Works.Emote.map((item) => item.thumbnail ?? item.src);
 >
   <SwiperWrapper>
     {
-      thumbnails.map((thumb, idx) => (
+      images.map((thumb, idx) => (
         <SwiperSlide>
-          <img src={thumb} alt="" loading="lazy" />
+          <img src={thumb.src} alt={thumb.alt || ""} loading="lazy" style="max-width: 100%; max-height: 100%; object-fit: cover;" />
         </SwiperSlide>
       ))
     }

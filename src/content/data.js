@@ -55,7 +55,7 @@ export const data = {
   },
 
   Contact: {
-    Intro: "Get in Touch!",
+    Intro: "Contact me here:",
     Subtext: "Want to work together or have any questions?",
     Mail: "manuelaienuso@gmail.com",
     Socials: [

@@ -1,26 +1,19 @@
 ---
-import { getCollection } from "astro:content";
-import Layout from '../layouts/Layout.astro';
-const allProjects = await getCollection("projects");
-const pageTitle = "Works";
 import { data } from "../content/data"
 import ExperienceTimeline from '../components/ExperienceTimeline.astro';
 import { Image } from 'astro:assets';
 
 ---
-<Layout pageTitle={pageTitle}>
-    <div>
-      <div class="polaroid">
-        <span>
-          <Image src="/material/photo2.jpg" alt="Ehy that's me!" layout='constrained' width={400} height={259} loading="lazy" id="emme-photo-about" />
-        </span>
-      </div>
-      <h2 style="font-weight: bold;">About me</h2>
-      <p>{data.About.Intro}</p>
-    </div>
-    <h2 style="font-weight: bold;">Experiences:</h2>
-    
-    <ExperienceTimeline />
+<div>
+  <div class="polaroid">
+    <span>
+      <Image src="/material/photo2.jpg" alt="Ehy that's me!" layout='constrained' width={400} height={259} loading="lazy" id="emme-photo-about" />
+    </span>
+  </div>
+  <h2 style="font-weight: bold;">About me</h2>
+  <p>{data.About.Intro}</p>
+</div>
+<h2 style="font-weight: bold;">Experiences:</h2>
 
-</Layout>
+<ExperienceTimeline />
 

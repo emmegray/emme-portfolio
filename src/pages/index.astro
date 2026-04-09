@@ -1,35 +1,64 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
 const pageTitle = "Emme portfolio";
-import { data } from "../content/data"
-import { Image } from 'astro:assets';
----
-<Layout pageTitle={pageTitle}>
-  <div>
-    <br>
-    <div style="text-align: center;">
-      <Image src="/material/emme-patata.png" alt="Emme patata icon" width={300} height={259} loading="lazy" id="emme-patata" />
-    </div>
+import { getCollection } from "astro:content";
+import { data } from "../content/data";
+import { Image } from "astro:assets";
+import Card from "../components/Card.astro";
+import ExperienceTimeline from "../components/ExperienceTimeline.astro";
+import SwiperArt from "../components/Swiper-Art.astro";
+import SwiperGraphic from "../components/Swiper-Graphic.astro";
+import Reveal from "../components/Reveal.jsx";
 
-    <h1 class="display-5 fw-bold lh-1 mb-3 text-white">
-      Ciao! <i class="fa-solid fa-music fa-bounce"></i>
-      <br>
-      I'm <b>Manuela</b>,
-    </h1>
-    <h2>
-      a Front-end Developer, Digital 2D Artist and Twitch Streamer from Italy
-    </h2>
-    <p>
-      I'm a creative chill person with the passion of learning new things while destroying them to understand how they work.<br>
-      If you are curious to know more about me feel free to browse this portfolio to see my work and more!
-    </p>
-    <div class="social-wrap">
-        <span>Keep in touch!</span>
-        <div class="social-container">
-            {data.Contact.Socials.map((social) => (
-      <a href={social.link} target="_blank"><i class={social.icon} style="font-size: large; padding:10px;"></i></a>
-))}
-        </div>
-    </div>
-  </div>
+import About from "./about.astro";
+import Works from "./works.astro";
+import Contact from "./contact.astro";
+
+const allProjects = await getCollection("projects");
+const artsEntries = await getCollection("arts");
+
+const imgArt = data.Works.Arts;
+const imgEmote = data.Works.Emote;
+---
+
+<Layout pageTitle={pageTitle}>
+  <!-- Home Section -->
+  <Reveal client:visible>
+    <section class="hero-section">
+      <div style="text-align: center;">
+        <Image src="/material/emme-patata.png" alt="Emme patata icon" width={300} height={259} loading="lazy" id="emme-patata" />
+      </div>
+      <h1 class="display-5 fw-bold lh-1 mb-3 text-white">
+        Ciao! <i class="fa-solid fa-music fa-bounce"></i>
+        <br />
+        I'm <b>Manuela</b>,
+      </h1>
+      <h2>a Front-end Developer, Digital 2D Artist and Twitch Streamer from Italy</h2>
+      <p>
+        I'm a creative chill person with the passion of learning new things while destroying them to understand how they work.<br />
+        If you are curious to know more about me feel free to browse this portfolio to see my work and more!
+      </p>
+    </section>
+  </Reveal>
+
+  <!-- About Section -->
+  <Reveal client:visible>
+    <section id="about" class="about-section">
+      <About />
+    </section>
+  </Reveal>
+
+  <!-- Works Section -->
+  <Reveal client:visible>
+    <section id="works" class="works-section">
+      <Works />
+    </section>
+  </Reveal>
+
+  <!-- Contact Section -->
+  <Reveal client:visible>
+    <section id="contact" class="contact-section">
+      <Contact />
+    </section>
+  </Reveal>
 </Layout>

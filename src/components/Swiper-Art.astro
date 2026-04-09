@@ -37,10 +37,6 @@ const thumbnails = data.Works.Arts.map((item) => item.thumbnail ?? item.src);
               alt={image.alt}
               loading="lazy"
               style="cursor:zoom-in;"
-              data-title={image.title ?? ""}
-              data-description={image.description ?? ""}
-              data-year={image.year ?? ""}
-              data-tool={image.tool ?? ""}
               layout='constrained' width={400} height={259} />
         </SwiperSlide>
       ))
@@ -83,7 +79,6 @@ const thumbnails = data.Works.Arts.map((item) => item.thumbnail ?? item.src);
   function setupArtPopup() {
     const popup = document.getElementById('artImagePopup');
     const popupImg = document.getElementById('artPopupImg');
-    const popupInfo = document.getElementById('artPopupInfo');
     const popupClose = document.getElementById('artPopupClose');
     const swiperArt = document.querySelector('.swiper-art');
 
@@ -98,14 +93,6 @@ const thumbnails = data.Works.Arts.map((item) => item.thumbnail ?? item.src);
         popup.style.display = "flex";
         popupImg.src = img.src;
         popupImg.alt = img.alt;
-
-        let infoHtml = "<ul>";
-        if (img.dataset.title) infoHtml += `<li>${img.dataset.title}</li>`;
-        if (img.dataset.description) infoHtml += `<li>${img.dataset.description}</li>`;
-        if (img.dataset.year) infoHtml += `<li>${img.dataset.year}</li>`;
-        if (img.dataset.tool) infoHtml += `<li>${img.dataset.tool}</li>`;
-        infoHtml += "</ul>";
-        popupInfo.innerHTML = infoHtml;
       }
     });
 
