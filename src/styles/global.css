@@ -131,6 +131,7 @@ header a:hover::before {
 #emme-patata {
   -webkit-animation: mover 2s infinite alternate;
   animation: mover 2s infinite alternate;
+  width: 75%;
 }
 @-webkit-keyframes mover {
   0% {
@@ -1412,33 +1413,4 @@ border: 1px solid rgba(255, 255, 255, 0.28);
 .reveal--visible {
   opacity: 1;
   transform: translateY(0);
-}
-
-section {
-  min-height: auto;
-  padding: 4rem 2rem;
-  margin: 2rem 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.hero-section {
-  min-height: 100svh;
-  justify-content: center;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
-.social-section {
-  min-height: auto;
-  padding: 3rem 2rem;
-}
-
-.about-section,
-.works-section,
-.contact-section {
-  min-height: auto;
-  padding: 4rem 2rem;
 }
