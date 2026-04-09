@@ -9,9 +9,8 @@ const allProjects = await getCollection("projects");
 const imgArt = data.Works.Arts;
 const imgEmote = data.Works.Emote;
 
-console.log("Works - Projects length:", allProjects.length);
-console.log("Works - Arts length:", imgArt.length);
-console.log("Works - Emotes length:", imgEmote.length);
+console.log("Projects loaded:", allProjects.length);
+console.log("First project:", allProjects[0]);
 
 ---
 <div class="text"><h2>Code projects:</h2></div>

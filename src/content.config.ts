@@ -25,36 +25,6 @@ const projectsCollection = defineCollection({
   }),
 });
 
-const artsCollection = defineCollection({
-  type: "content",
-  schema: z.object({
-    title: z.string(),
-    src: z.string(),
-    thumbnail: z.string().optional(),
-    alt: z.string(),
-    year: z.number(),
-    tool: z.string(),
-  }),
-});
-
-const emoteCollection = defineCollection({
-  type: "content",
-  schema: z.object({
-    title: z.string(),
-    description: z.string(),
-    image: z.object({
-      url: z.string(),
-      alt: z.string(),
-    }),
-    slides: z.array(z.object({
-      url: z.string(),
-      alt: z.string(),
-    })),
-    year: z.number(),
-    tool: z.string(),
-  }),
-});
-
 const postsCollection = defineCollection({
   type: "content",
   schema: z.object({
@@ -69,7 +39,5 @@ const postsCollection = defineCollection({
 
 export const collections = {
   projects: projectsCollection,
-  arts: artsCollection,
-  emotes: emoteCollection,
   posts: postsCollection,
 };
