@@ -1,10 +1,10 @@
 ---
-import { Swiper, SwiperWrapper, SwiperSlide, SwiperButtonPrev, SwiperButtonNext } from 'astro-swiper';
-import { data } from '../content/data';
-import { Image } from 'astro:assets';
+import { Swiper, SwiperWrapper, SwiperSlide, SwiperButtonPrev, SwiperButtonNext } from "astro-swiper"
+import { data } from "../content/data"
+import { Image } from "astro:assets"
 
-const images = data.Works.Arts;
-const thumbnails = data.Works.Arts.map(item => item.thumbnail ?? item.src);
+const images = data.Works.Arts
+const thumbnails = data.Works.Arts.map(item => item.thumbnail ?? item.src)
 ---
 
 <Swiper
