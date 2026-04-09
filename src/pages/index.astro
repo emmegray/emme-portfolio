@@ -20,10 +20,10 @@ const imgEmote = data.Works.Emote;
 <Layout pageTitle={pageTitle}>
   <!-- Home Section -->
    <br>
-  <Reveal client:visible>
+  <Reveal client:load>
     <section class="hero-section">
       <div style="text-align: center;">
-        <Image src="/material/emme-patata.png" alt="Emme patata icon" width={300} height={259} loading="lazy" id="emme-patata" />
+        <Image src="/material/emme-patata.png" alt="Emme patata icon" width={300} height={259} loading="eager" id="emme-patata" decoding="async" />
       </div>
       <h1 class="display-5 fw-bold lh-1 mb-3 text-white">
         Ciao! <i class="fa-solid fa-music fa-bounce"></i>
@@ -39,21 +39,21 @@ const imgEmote = data.Works.Emote;
   </Reveal>
 
   <!-- About Section -->
-  <Reveal client:visible>
+  <Reveal client:load>
     <section id="about">
       <About />
     </section>
   </Reveal>
 
   <!-- Works Section -->
-  <Reveal client:visible>
+  <Reveal client:load>
     <section id="works">
       <Works />
     </section>
   </Reveal>
 
   <!-- Contact Section -->
-  <Reveal client:visible>
+  <Reveal client:load>
     <section id="contact">
       <Contact />
     </section>
