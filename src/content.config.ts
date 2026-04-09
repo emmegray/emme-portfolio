@@ -2,7 +2,6 @@ import {defineCollection } from "astro:content";
 import { z } from "astro/zod";
 
 const projectsCollection = defineCollection({
-  type: "content",
   schema: z.object({
     title: z.string(),
     description: z.string(),
@@ -26,7 +25,6 @@ const projectsCollection = defineCollection({
 });
 
 const postsCollection = defineCollection({
-  type: "content",
   schema: z.object({
     title: z.string(),
     date: z.string(),
