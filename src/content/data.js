@@ -128,6 +128,48 @@ export const data = {
   Works: {
     TitleArts: "Drawing commissions:",
     TitleEmote: "Emote commissions:",
+    Projects: [
+      {
+        title: "Arcade",
+        description: "This is a little group of retro games made with vanilla JS, HTML and CSS. Made for practice to improve my skill.",
+        image: {
+          url: "/arcade.png",
+          alt: "Arcade game preview",
+        },
+        website: "https://emme-arcade.netlify.app/home",
+        github: "https://github.com/emmegray/arcade",
+      },
+      {
+        title: "Boolzapp",
+        description: "Simple replica of WhatsApp made with HTML, CSS and JavaScript. You can write in the chat and send messages!",
+        image: {
+          url: "/whatsup.png",
+          alt: "Boolzapp preview",
+        },
+        website: "https://emme-boolzapp.netlify.app/",
+        github: "https://github.com/emmegray/vue-boolzapp",
+      },
+      {
+        title: "Etch a sketch",
+        description: "Simple exercise based on the project Etch-a-Sketch from Odin to improve DOM manipulation skills with JS.",
+        image: {
+          url: "/etch-a-sketch.png",
+          alt: "Etch a sketch preview",
+        },
+        website: "https://emmegray.github.io/odin-etch-a-sketch/",
+        github: "https://github.com/emmegray/odin-etch-a-sketch",
+      },
+      {
+        title: "Watch Lab",
+        description: "Replica of a landing page inspired by a luxury goods store. Created with Next.js and SCSS. Fully responsive.",
+        image: {
+          url: "/watch-lab.png",
+          alt: "Watch Lab preview",
+        },
+        website: "https://watch-lab.vercel.app/",
+        github: "https://github.com/emmegray/watch-lab",
+      },
+    ],
     Arts: [
       {
         alt: "Moonlight, fan art of John Martson from Red Dead Redemption for lights practice",
