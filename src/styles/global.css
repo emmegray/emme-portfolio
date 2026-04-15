@@ -799,17 +799,31 @@ button {
   color: #fff !important;
   filter: drop-shadow(0 2px 6px #000a);
   text-shadow: 0 2px 8px #000a;
-  width: 44px;
-  height: 44px;
+  width: 44px !important;
+  height: 44px !important;
   border-radius: 50%;
-  transition: background 0.2s;
-  top: 50%;
-  transform: translateY(-50%);
+  transition: opacity 0.2s;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  z-index: 10 !important;
+  background: rgba(0, 0, 0, 0.3) !important;
+  border: none !important;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  position: absolute !important;
 }
 
 .swiper-button-next:hover,
 .swiper-button-prev:hover {
-  opacity: 50%;
+  opacity: 0.8 !important;
+  background: rgba(0, 0, 0, 0.5) !important;
 }
 
 .swiper-button-next::after,
@@ -817,20 +831,8 @@ button {
   color: #fff !important;
   font-size: 2rem;
   text-shadow: 0 2px 8px #000a;
-}
-
-/* Pulsanti Swiper */
-.swiper-button-next,
-.swiper-button-prev {
-  color: #fff !important;
-  filter: drop-shadow(0 2px 6px #000a);
-  text-shadow: 0 2px 8px #000a;
-}
-
-.swiper-button-next::after,
-.swiper-button-prev::after {
-  color: #fff !important;
-  text-shadow: 0 2px 8px #000a;
+  width: auto !important;
+  height: auto !important;
 }
 
 /* Divider */
