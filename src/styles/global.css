@@ -801,7 +801,6 @@ button {
   text-shadow: 0 2px 8px #000a;
   width: 50px !important;
   height: 50px !important;
-  padding: 10px;
   border-radius: 50%;
   transition: opacity 0.2s;
   top: 50% !important;
@@ -815,6 +814,9 @@ button {
   background: rgba(0, 0, 0, 0.4) !important;
   border: none !important;
   position: absolute !important;
+  padding: 0 !important;
+  outline: none !important;
+  --swiper-navigation-size: 28px !important;
 }
 
 .swiper-button-next:hover,
@@ -828,13 +830,13 @@ button {
   color: #fff !important;
   font-size: 28px !important;
   text-shadow: 0 2px 8px #000a;
-  width: auto !important;
-  height: auto !important;
   line-height: 1 !important;
-  display: inline-block !important;
+  display: block !important;
   position: relative !important;
   margin: 0 !important;
   padding: 0 !important;
+  width: auto !important;
+  height: auto !important;
 }
 
 /* Divider */
