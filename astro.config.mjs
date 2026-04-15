@@ -6,5 +6,5 @@ import react from '@astrojs/react';
 export default defineConfig({
   integrations: [react()],
 
-  site: 'https://emmegray.github.io',
+  site: 'https://emme-gray.netlify.app',
 });
