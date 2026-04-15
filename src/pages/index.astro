@@ -11,7 +11,6 @@ import Works from "./works.astro";
 import Contact from "./contact.astro";
 
 const allProjects = await getCollection("projects");
-const artsEntries = await getCollection("arts");
 
 const imgArt = data.Works.Arts;
 const imgEmote = data.Works.Emote;
@@ -46,16 +45,13 @@ const imgEmote = data.Works.Emote;
   </Reveal>
 
   <!-- Works Section -->
-  <Reveal client:load>
     <section id="works">
       <Works />
     </section>
-  </Reveal>
 
   <!-- Contact Section -->
-  <Reveal client:load>
     <section id="contact">
       <Contact />
     </section>
-  </Reveal>
+
 </Layout>
