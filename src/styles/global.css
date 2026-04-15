@@ -799,8 +799,9 @@ button {
   color: #fff !important;
   filter: drop-shadow(0 2px 6px #000a);
   text-shadow: 0 2px 8px #000a;
-  width: 44px !important;
-  height: 44px !important;
+  width: 50px !important;
+  height: 50px !important;
+  padding: 10px;
   border-radius: 50%;
   transition: opacity 0.2s;
   top: 50% !important;
@@ -811,28 +812,29 @@ button {
   opacity: 1 !important;
   visibility: visible !important;
   z-index: 10 !important;
-  background: rgba(0, 0, 0, 0.3) !important;
+  background: rgba(0, 0, 0, 0.4) !important;
   border: none !important;
-}
-
-.swiper-button-next,
-.swiper-button-prev {
   position: absolute !important;
 }
 
 .swiper-button-next:hover,
 .swiper-button-prev:hover {
-  opacity: 0.8 !important;
-  background: rgba(0, 0, 0, 0.5) !important;
+  opacity: 0.9 !important;
+  background: rgba(0, 0, 0, 0.6) !important;
 }
 
 .swiper-button-next::after,
 .swiper-button-prev::after {
   color: #fff !important;
-  font-size: 2rem;
+  font-size: 28px !important;
   text-shadow: 0 2px 8px #000a;
   width: auto !important;
   height: auto !important;
+  line-height: 1 !important;
+  display: inline-block !important;
+  position: relative !important;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 /* Divider */
