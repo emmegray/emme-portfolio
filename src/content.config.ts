@@ -35,7 +35,37 @@ const postsCollection = defineCollection({
   }),
 });
 
+const artsCollection = defineCollection({
+  schema: z.object({
+    title: z.string(),
+    src: z.string(),
+    thumbnail: z.string(),
+    alt: z.string(),
+    year: z.number().optional(),
+    tool: z.string().optional(),
+  }),
+});
+
+const emotesCollection = defineCollection({
+  schema: z.object({
+    title: z.string(),
+    description: z.string(),
+    image: z.object({
+      url: z.string(),
+      alt: z.string(),
+    }),
+    slides: z.array(z.object({
+      url: z.string(),
+      alt: z.string(),
+    })).optional(),
+    year: z.number().optional(),
+    tool: z.string().optional(),
+  }),
+});
+
 export const collections = {
   projects: projectsCollection,
   posts: postsCollection,
+  arts: artsCollection,
+  emotes: emotesCollection,
 };
