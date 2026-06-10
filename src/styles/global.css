@@ -1492,3 +1492,9 @@ button {
   opacity: 1;
   transform: translateY(0);
 }
+
+.icon-rotate {
+  vertical-align: middle;
+  display: inline-block;
+  transform: rotate(8deg);
+}
