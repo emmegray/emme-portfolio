@@ -55,17 +55,17 @@ export const data = {
   },
 
   Contact: {
-    Intro: "Contact me here:",
+    Intro: "Contact me:",
     Subtext: "Want to work together or have any questions?",
     Mail: "manuelaienuso@gmail.com",
     Socials: [
-      {
-        name: "Email",
-        nickname: "manuelaienuso@gmail.com",
-        link: "mailto:manuelaienuso@gmail.com",
-        icon: "fa-solid fa-envelope",
-        style: "#FFFFFF",
-      },
+      // {
+      //   name: "Email",
+      //   nickname: "manuelaienuso@gmail.com",
+      //   link: "mailto:manuelaienuso@gmail.com",
+      //   icon: "fa-solid fa-envelope",
+      //   style: "#FFFFFF",
+      // },
       {
         name: "GitHub",
         nickname: "@emmegray",
