@@ -1225,55 +1225,31 @@ button {
   box-sizing: border-box;
 }
 
-.exp-arrows-row {
+.exp-pagination {
   display: flex;
-  align-items: flex-start;
   justify-content: center;
-  width: 100%;
-  margin-bottom: 1rem;
+  gap: 0.8rem;
 }
 
-.exp-arrow {
-  font-family: swiper-icons;
-    font-size: var(--swiper-navigation-size);
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 2;
-  border: none;
+.exp-dot {
+  width: 12px;
+  height: 12px;
   border-radius: 50%;
-  width: 44px;
-  height: 44px;
-  font-size: 2rem;
-  background: #ffffff7a;
-  color: #494949;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: background 0.2s, opacity 0.2s;
-  opacity: 0.95;
-  text-shadow: 0 2px 8px #000a;
-  filter: drop-shadow(0 2px 6px #000a);
   border: none;
+  background: rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+  padding: 0;
 }
 
-.exp-arrow--left {
-  left: 0;
+.exp-dot:hover {
+  background: rgba(255, 255, 255, 0.7);
+  transform: scale(1.2);
 }
 
-.exp-arrow:hover,
-.exp-arrow:focus {
-  opacity: 0.5;
-  background: #ffffff7a;
-}
-
-@media (max-width: 700px) {
-  .exp-arrow {
-    width: 36px;
-    height: 36px;
-    font-size: 1.4rem;
-  }
+.exp-dot.active {
+  background: #ffffff;
+  transform: scale(1.3);
 }
 
 .exp-arrows-row {
