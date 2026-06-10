@@ -166,7 +166,6 @@ header a:hover::before {
   background: #ffffff;
   display: inline-block;
   margin: 0px 40px 50px;
-  padding: 15px 15px 30px;
   text-align: center;
   text-decoration: none;
   -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
@@ -177,6 +176,7 @@ header a:hover::before {
   transition: all 0.2s linear;
   z-index: 0;
   position: relative;
+  border-radius: 12px;
 }
 
 .polaroid span:after {
@@ -190,6 +190,7 @@ header a:hover::before {
 .polaroid img {
   display: block;
   width: auto;
+  border-radius: 12px
 }
 
 .polaroid {
@@ -365,10 +366,47 @@ header a:hover::before {
   -webkit-transition: all 0.2s linear;
   -moz-transition: all 0.2s linear;
   transition: all 0.2s linear;
+  border-radius: 12px;
 }
 
-.card:hover {
+.card:nth-child(1):hover {
   transform: scale(1.05) rotate(2deg);
+}
+
+.card:nth-child(2):hover {
+  transform: scale(1.05) rotate(-1.5deg);
+}
+
+.card:nth-child(3):hover {
+  transform: scale(1.05) rotate(1deg);
+}
+
+.card:nth-child(4):hover {
+  transform: scale(1.05) rotate(-2deg);
+}
+
+.card:nth-child(5):hover {
+  transform: scale(1.05) rotate(0.5deg);
+}
+
+.card:nth-child(6):hover {
+  transform: scale(1.05) rotate(-0.8deg);
+}
+
+.card:nth-child(7):hover {
+  transform: scale(1.05) rotate(1.5deg);
+}
+
+.card:nth-child(8):hover {
+  transform: scale(1.05) rotate(-1.2deg);
+}
+
+.card:nth-child(9):hover {
+  transform: scale(1.05) rotate(1.8deg);
+}
+
+.card:nth-child(10):hover {
+  transform: scale(1.05) rotate(-0.5deg);
 }
 
 .card__link {
@@ -1053,13 +1091,12 @@ button {
 }
 
 .card-info {
-background: rgba(255, 255, 255, 0.959);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(7.4px);
--webkit-backdrop-filter: blur(7.4px);
-border: 1px solid rgba(255, 255, 255, 0.28);
-
+  background: rgba(255, 255, 255, 0.959);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.4px);
+  -webkit-backdrop-filter: blur(7.4px);
+  border: 1px solid rgba(255, 255, 255, 0.28);
   padding: 20px 24px;
   margin-bottom: 0;
   color: #000000;
@@ -1226,7 +1263,7 @@ border: 1px solid rgba(255, 255, 255, 0.28);
   flex: 0 0 100%;
   scroll-snap-align: center;
   background: rgba(255,255,255,0.97);
-  border-radius: 16px;
+  border-radius: 12px;
   box-shadow: 0 4px 30px rgba(0,0,0,0.1);
   padding: 20px 24px;
   color: #000;
@@ -1292,13 +1329,6 @@ border: 1px solid rgba(255, 255, 255, 0.28);
   margin-top: 20px;
 }
 
-.card {
-  background: #f9f9f9;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-
 /* Social */
 .social-wrap {
   position: relative;
@@ -1358,7 +1388,7 @@ border: 1px solid rgba(255, 255, 255, 0.28);
 }
 
 .social-container a {
-  padding: 15px;
+  padding: 8px;
   transition: 700ms;
   color: #ffffff;
   text-align: center;
@@ -1422,12 +1452,12 @@ border: 1px solid rgba(255, 255, 255, 0.28);
 /* Responsive mobile */
 @media (max-width: 640px) {
   .social-container a {
-    font-size: 20px;
-    padding: 10px;
+    font-size: 14px;
+    padding: 4px;
   }
   
   .social-wrap:hover a:hover {
-    transform: scale(1.1);
+    transform: scale(1.08);
   }
 }
 

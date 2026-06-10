@@ -9,7 +9,10 @@ const imgArt = data.Works.Arts;
 const imgEmote = data.Works.Emote;
 
 ---
+    <br><br>
+
 <div class="text"><h2>Code projects:</h2></div>
+    <br><br>
 
     <ul role="list" class="link-card-grid">
         {allProjects.map((card) => <Card 
@@ -18,8 +21,13 @@ const imgEmote = data.Works.Emote;
             title={card.title}
         />)}
     </ul>
+  
+    <br><br>
 
+  
   <div class="text" id="triggerSection"><h2>Arts projects:</h2></div>
+
+      <br><br>
 
 <!--    <LightGallery
 class="..."
@@ -44,7 +52,6 @@ addPlugins={[ 'zoom' ]}
   ))
 }
 </LightGallery> -->
-
 
     <SwiperArt/>
     
