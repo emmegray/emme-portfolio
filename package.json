@@ -31,7 +31,7 @@
     "react-dom": "^18.3.1",
     "sharp": "^0.35.3",
     "swiper": "^12.1.2",
-    "vite": "^6.4.1",
+    "vite": "^6.4.3",
     "webcoreui": "^0.8.1"
   },
   "devDependencies": {
