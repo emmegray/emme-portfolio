@@ -140,6 +140,16 @@ export const data = {
         github: "https://github.com/emmegray/arcade",
       },
       {
+        title: "DEM Email Tester",
+        description: "A full-stack application for testing and sending HTML email templates (DEM) to real inboxes like Gmail, Outlook, Yahoo, and more.",
+        image: {
+          url: "/dem-tester.png",
+          alt: "DEM Email Tester",
+        },
+        website: "https://github.com/emmegray/mail-sender",
+        github: "https://github.com/emmegray/mail-sender",
+      },
+      {
         title: "Boolzapp",
         description: "Simple replica of WhatsApp made with HTML, CSS and JavaScript. You can write in the chat and send messages!",
         image: {
@@ -166,7 +176,7 @@ export const data = {
           url: "/watch-lab.png",
           alt: "Watch Lab preview",
         },
-        website: "https://watch-lab.vercel.app/",
+        website: "https://watch-lab-page.netlify.app",
         github: "https://github.com/emmegray/watch-lab",
       },
     ],
